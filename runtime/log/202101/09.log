@@ -1,0 +1,2036 @@
+---------------------------------------------------------------
+[ 2021-01-09T12:18:48+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[ error ] [1]Class 'MMenu' not found
+---------------------------------------------------------------
+[ 2021-01-09T12:20:03+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[ error ] [1]Class 'MMenu' not found
+---------------------------------------------------------------
+[ 2021-01-09T12:20:04+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[ error ] [1]Class 'MMenu' not found
+---------------------------------------------------------------
+[ 2021-01-09T12:20:12+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[ error ] [1]Class 'MMenu' not found
+---------------------------------------------------------------
+[ 2021-01-09T12:21:25+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[ error ] [1]Class 'MMenu' not found
+---------------------------------------------------------------
+[ 2021-01-09T12:22:15+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[ error ] [1]Class 'MMenu' not found
+---------------------------------------------------------------
+[ 2021-01-09T13:11:16+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[ error ] [1]Class 'MMenu' not found
+---------------------------------------------------------------
+[ 2021-01-09T13:11:58+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[ error ] [1]Class 'MMenu' not found
+---------------------------------------------------------------
+[ 2021-01-09T13:11:59+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[ error ] [1]Class 'MMenu' not found
+---------------------------------------------------------------
+[ 2021-01-09T13:41:39+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[ error ] [1]Class 'MMenu' not found
+---------------------------------------------------------------
+[ 2021-01-09T13:42:00+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[ error ] [1]Class 'MMenu' not found
+---------------------------------------------------------------
+[ 2021-01-09T13:43:48+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[运行时间：0.531153s] [吞吐率：1.88req/s] [内存消耗：1,467.81kb] [文件加载：40]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->getMenu[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Class 'MMenu' not found[D:\my web\tp5\app\index\controller\Index.php:28]
+---------------------------------------------------------------
+[ 2021-01-09T13:44:26+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[运行时间：0.060683s] [吞吐率：16.48req/s] [内存消耗：1,468.13kb] [文件加载：40]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->getMenu[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Class 'app\index\controller\MMenu' not found[D:\my web\tp5\app\index\controller\Index.php:28]
+---------------------------------------------------------------
+[ 2021-01-09T13:45:33+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[运行时间：0.028130s] [吞吐率：35.55req/s] [内存消耗：1,434.30kb] [文件加载：36]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->getMenu[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-01-09T14:23:52+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[运行时间：0.558596s] [吞吐率：1.79req/s] [内存消耗：2,477.63kb] [文件加载：43]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->getMenu[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-01-09T14:24:02+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[运行时间：0.466076s] [吞吐率：2.15req/s] [内存消耗：2,524.96kb] [文件加载：48]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->getMenu[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.172240s ] mysql:host=127.0.0.1;dbname=;charset=utf8
+[ error ] [10501]SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected[D:\my web\tp5\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2021-01-09T14:25:23+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[运行时间：0.116985s] [吞吐率：8.55req/s] [内存消耗：1,468.52kb] [文件加载：40]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->getMenu[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Class 'MMenu' not found[D:\my web\tp5\app\index\controller\Index.php:29]
+---------------------------------------------------------------
+[ 2021-01-09T14:25:48+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[运行时间：0.177719s] [吞吐率：5.63req/s] [内存消耗：2,524.96kb] [文件加载：48]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->getMenu[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011150s ] mysql:host=127.0.0.1;dbname=;charset=utf8
+[ error ] [10501]SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected[D:\my web\tp5\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2021-01-09T14:26:39+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[运行时间：0.058010s] [吞吐率：17.24req/s] [内存消耗：2,525.34kb] [文件加载：48]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->getMenu[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004466s ] mysql:host=127.0.0.1;dbname=;charset=utf8
+[ error ] [10501]SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected[D:\my web\tp5\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2021-01-09T14:27:45+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[运行时间：0.551308s] [吞吐率：1.81req/s] [内存消耗：2,531.67kb] [文件加载：48]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->getMenu[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.166508s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ours.m_menu' doesn't exist[D:\my web\tp5\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2021-01-09T14:27:47+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[运行时间：0.090109s] [吞吐率：11.10req/s] [内存消耗：2,531.70kb] [文件加载：48]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->getMenu[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012605s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ours.m_menu' doesn't exist[D:\my web\tp5\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2021-01-09T14:28:32+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[运行时间：0.267973s] [吞吐率：3.73req/s] [内存消耗：2,506.07kb] [文件加载：43]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->getMenu[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011741s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.174350s ]
+[ sql ] [ SQL ] SELECT * FROM `t_m_menu` [ RunTime:0.001782s ]
+---------------------------------------------------------------
+[ 2021-01-09T14:35:33+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[运行时间：0.423787s] [吞吐率：2.36req/s] [内存消耗：2,504.79kb] [文件加载：43]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->getMenu[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002772s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.037907s ]
+[ sql ] [ SQL ] SELECT * FROM `t_m_menu` WHERE  `state` = 0 [ RunTime:0.034558s ]
+---------------------------------------------------------------
+[ 2021-01-09T14:36:00+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[运行时间：0.085138s] [吞吐率：11.75req/s] [内存消耗：2,509.48kb] [文件加载：43]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->getMenu[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001965s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.033788s ]
+[ sql ] [ SQL ] SELECT * FROM `t_m_menu` WHERE  `state` = 0 [ RunTime:0.000891s ]
+---------------------------------------------------------------
+[ 2021-01-09T15:10:00+08:00 ] 127.0.0.1 POST www.wuruyue.com/index/index/login
+[运行时间：0.238023s] [吞吐率：4.20req/s] [内存消耗：1,377.17kb] [文件加载：33]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-for' => '127.0.0.1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/index.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+  'pwd' => 'myworldqwepoi!@#450',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-01-09T15:10:01+08:00 ] 127.0.0.1 POST www.wuruyue.com/index/index/
+[运行时间：0.228128s] [吞吐率：4.38req/s] [内存消耗：1,413.37kb] [文件加载：36]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-for' => '127.0.0.1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/myworld.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-01-09T15:10:22+08:00 ] 127.0.0.1 POST www.wuruyue.com/index/index/login
+[运行时间：0.024810s] [吞吐率：40.31req/s] [内存消耗：1,377.16kb] [文件加载：33]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-for' => '127.0.0.1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/index.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '27',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+  'pwd' => 'mywebqwepoi!@#450',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-01-09T15:10:22+08:00 ] 127.0.0.1 POST www.wuruyue.com/index/index/
+[运行时间：0.043068s] [吞吐率：23.22req/s] [内存消耗：1,413.37kb] [文件加载：36]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-for' => '127.0.0.1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/myworld.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-01-09T19:35:37+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[运行时间：3.865165s] [吞吐率：0.26req/s] [内存消耗：2,507.36kb] [文件加载：43]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->getMenu[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.721740s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.212498s ]
+[ sql ] [ SQL ] SELECT * FROM `t_m_menu` WHERE  `state` = 0  AND `parent_menu_id` = 0 [ RunTime:0.021960s ]
+---------------------------------------------------------------
+[ 2021-01-09T19:35:41+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[运行时间：0.083475s] [吞吐率：11.98req/s] [内存消耗：2,507.39kb] [文件加载：43]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->getMenu[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010360s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.026006s ]
+[ sql ] [ SQL ] SELECT * FROM `t_m_menu` WHERE  `state` = 0  AND `parent_menu_id` = 0 [ RunTime:0.000478s ]
+---------------------------------------------------------------
+[ 2021-01-09T19:42:06+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[运行时间：0.319421s] [吞吐率：3.13req/s] [内存消耗：2,507.36kb] [文件加载：43]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->getMenu[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002596s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.056848s ]
+[ sql ] [ SQL ] SELECT * FROM `t_m_menu` WHERE  `state` = 0  AND `parent_menu_id` = 0 [ RunTime:0.000617s ]
+---------------------------------------------------------------
+[ 2021-01-09T19:46:29+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/getMenu
+[运行时间：0.284325s] [吞吐率：3.52req/s] [内存消耗：2,507.36kb] [文件加载：43]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->getMenu[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010075s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.036559s ]
+[ sql ] [ SQL ] SELECT * FROM `t_m_menu` WHERE  `state` = 0  AND `parent_menu_id` = 0 [ RunTime:0.000760s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:14:34+08:00 ] 127.0.0.1 POST www.wuruyue.com/index/index/login
+[运行时间：0.499930s] [吞吐率：2.00req/s] [内存消耗：2,461.67kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-for' => '127.0.0.1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/index.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '28',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+  'pwd' => 'mywoldqwepoi!@#450',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020835s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.046552s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = '8484cf66aa2ab906df1e8b102dd30a4b' LIMIT 1 [ RunTime:0.015092s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:15:05+08:00 ] 127.0.0.1 POST www.wuruyue.com/index/index/login
+[运行时间：0.089602s] [吞吐率：11.16req/s] [内存消耗：2,461.67kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-for' => '127.0.0.1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/index.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+  'pwd' => 'myworldqwepoi!@#459',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010681s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.036540s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = 'c9bb2d399eba669d0a1118eb90882d57' LIMIT 1 [ RunTime:0.000445s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:15:19+08:00 ] 127.0.0.1 POST www.wuruyue.com/index/index/login
+[运行时间：0.091496s] [吞吐率：10.93req/s] [内存消耗：2,461.67kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-for' => '127.0.0.1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/index.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+  'pwd' => 'myworldqwepoi!@#450',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010348s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.040551s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = '821bf2234c46d81038d7dc52a700398f' LIMIT 1 [ RunTime:0.000401s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:16:50+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/index/password/myworldqwepoi!@
+[运行时间：0.757301s] [吞吐率：1.32req/s] [内存消耗：1,456.77kb] [文件加载：39]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'myworldqwepoi!@',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-01-09T21:17:04+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/index?password=myworldqwepoi!@
+[运行时间：0.046036s] [吞吐率：21.72req/s] [内存消耗：1,456.49kb] [文件加载：39]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'myworldqwepoi!@',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-01-09T21:17:14+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/login?password=myworldqwepoi!@
+[运行时间：0.204242s] [吞吐率：4.90req/s] [内存消耗：2,500.91kb] [文件加载：43]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'myworldqwepoi!@',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010182s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.035943s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = '74be16979710d4c4e7c6647856088456' LIMIT 1 [ RunTime:0.000505s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:18:03+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/login?password=myworldqwepoi!@
+[运行时间：0.156507s] [吞吐率：6.39req/s] [内存消耗：2,501.64kb] [文件加载：43]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'myworldqwepoi!@',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010223s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.030566s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = '74be16979710d4c4e7c6647856088456' LIMIT 1 [ RunTime:0.000729s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:18:40+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/login?password=myworldqwepoi!@
+[运行时间：0.088711s] [吞吐率：11.27req/s] [内存消耗：2,501.94kb] [文件加载：43]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'myworldqwepoi!@',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011963s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.033403s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = '74be16979710d4c4e7c6647856088456' LIMIT 1 [ RunTime:0.000471s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:19:34+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/login?password=myworldqwepoi!@
+[运行时间：0.080144s] [吞吐率：12.48req/s] [内存消耗：2,501.61kb] [文件加载：43]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'myworldqwepoi!@',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000956s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.027504s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = '74be16979710d4c4e7c6647856088456' LIMIT 1 [ RunTime:0.000467s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:20:16+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/login?password=myworldqwepoi!@
+[运行时间：0.499728s] [吞吐率：2.00req/s] [内存消耗：2,500.88kb] [文件加载：43]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'myworldqwepoi!@',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011718s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.030455s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1 [ RunTime:0.000819s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:20:20+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/login?password=myworldqwepoi!@
+[运行时间：0.087787s] [吞吐率：11.39req/s] [内存消耗：2,500.91kb] [文件加载：43]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'myworldqwepoi!@',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010282s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.031101s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1 [ RunTime:0.000471s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:21:06+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/login?password=myworldqwepoi!@
+[运行时间：0.265726s] [吞吐率：3.76req/s] [内存消耗：2,501.77kb] [文件加载：43]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'myworldqwepoi!@',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010215s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.035779s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1 [ RunTime:0.000517s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:21:36+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/login?password=myworldqwepoi!@
+[运行时间：0.107204s] [吞吐率：9.33req/s] [内存消耗：2,501.38kb] [文件加载：43]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'myworldqwepoi!@',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010140s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.035369s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1 [ RunTime:0.000535s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:21:36+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/login?password=myworldqwepoi!@
+[运行时间：0.079088s] [吞吐率：12.64req/s] [内存消耗：2,501.34kb] [文件加载：43]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'myworldqwepoi!@',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011305s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.015010s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1 [ RunTime:0.000361s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:22:16+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/login?password=mywebqwepoi!@
+[运行时间：0.089723s] [吞吐率：11.15req/s] [内存消耗：2,501.35kb] [文件加载：43]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'mywebqwepoi!@',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001814s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.031061s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1 [ RunTime:0.000493s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:22:19+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/login?password=mywebqwepoi!@
+[运行时间：0.094486s] [吞吐率：10.58req/s] [内存消耗：2,501.77kb] [文件加载：43]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'mywebqwepoi!@',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010711s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.035615s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1 [ RunTime:0.001074s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:23:01+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/login?password=mywebqwepoi!@
+[运行时间：0.107873s] [吞吐率：9.27req/s] [内存消耗：2,501.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'mywebqwepoi!@',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010644s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.050324s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = '' LIMIT 1 [ RunTime:0.000584s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:23:49+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/login?password=mywebqwepoi!@
+[运行时间：0.096815s] [吞吐率：10.33req/s] [内存消耗：2,502.29kb] [文件加载：43]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'mywebqwepoi!@',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011551s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.031608s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = '74be16979710d4c4e7c6647856088456' LIMIT 1 [ RunTime:0.000503s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:23:49+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/login?password=mywebqwepoi!@
+[运行时间：0.073493s] [吞吐率：13.61req/s] [内存消耗：2,502.29kb] [文件加载：43]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'mywebqwepoi!@',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010915s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.014114s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = '74be16979710d4c4e7c6647856088456' LIMIT 1 [ RunTime:0.000335s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:24:19+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/login?password=mywebqwepoi!@
+[运行时间：0.103531s] [吞吐率：9.66req/s] [内存消耗：2,502.29kb] [文件加载：43]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'mywebqwepoi!@',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001149s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.034666s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = '74be16979710d4c4e7c6647856088456' LIMIT 1 [ RunTime:0.000579s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:24:21+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/login?password=mywebqwepoi!@
+[运行时间：0.085371s] [吞吐率：11.71req/s] [内存消耗：2,502.29kb] [文件加载：43]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'mywebqwepoi!@',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001703s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.027700s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = '74be16979710d4c4e7c6647856088456' LIMIT 1 [ RunTime:0.000609s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:24:37+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/login?password=mywebqwepoi!@
+[运行时间：0.090109s] [吞吐率：11.10req/s] [内存消耗：2,502.29kb] [文件加载：43]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'mywebqwepoi!@',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010205s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.031733s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = '74be16979710d4c4e7c6647856088456' LIMIT 1 [ RunTime:0.000523s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:24:48+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/login?password=mywebqwepoi!@
+[运行时间：0.125052s] [吞吐率：8.00req/s] [内存消耗：2,501.30kb] [文件加载：43]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'mywebqwepoi!@',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010550s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.065604s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = '74be16979710d4c4e7c6647856088456' LIMIT 1 [ RunTime:0.000447s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:25:00+08:00 ] 127.0.0.1 POST www.wuruyue.com/index/index/login
+[运行时间：0.288473s] [吞吐率：3.47req/s] [内存消耗：2,462.16kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-for' => '127.0.0.1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/index.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+  'pwd' => 'myworldqwepoi!@#450',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009991s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.051948s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = '821bf2234c46d81038d7dc52a700398f' LIMIT 1 [ RunTime:0.000476s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:25:04+08:00 ] 127.0.0.1 POST www.wuruyue.com/index/index/getMenu
+[运行时间：0.211632s] [吞吐率：4.73req/s] [内存消耗：2,467.83kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-for' => '127.0.0.1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/myworld.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '2',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->getMenu[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001307s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.098948s ]
+[ sql ] [ SQL ] SELECT * FROM `t_m_menu` WHERE  `state` = 0  AND `parent_menu_id` = 0 [ RunTime:0.051753s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:28:26+08:00 ] 127.0.0.1 POST www.wuruyue.com/index/index/getMenu
+[运行时间：0.533560s] [吞吐率：1.87req/s] [内存消耗：2,245.55kb] [文件加载：38]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-for' => '127.0.0.1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/myworld.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '2',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->getMenu[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010644s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.276693s ]
+[ sql ] [ SQL ] SELECT * FROM `t_m_menu` WHERE  `state` = 0  AND `parent_menu_id` = 0 [ RunTime:0.001298s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:28:42+08:00 ] 127.0.0.1 POST www.wuruyue.com/index/index/login
+[运行时间：0.134357s] [吞吐率：7.44req/s] [内存消耗：2,239.28kb] [文件加载：38]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-for' => '127.0.0.1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '22',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+  'pwd' => 'qwepoi!@#450',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010421s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.083339s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = 'b3ae2f3f06bd4ad75fb40952ce3dfc0e' LIMIT 1 [ RunTime:0.001468s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:28:54+08:00 ] 127.0.0.1 POST www.wuruyue.com/index/index/login
+[运行时间：0.081198s] [吞吐率：12.32req/s] [内存消耗：2,239.28kb] [文件加载：38]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-for' => '127.0.0.1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '22',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+  'pwd' => 'qwepoi!@#450',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010680s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.030072s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = 'b3ae2f3f06bd4ad75fb40952ce3dfc0e' LIMIT 1 [ RunTime:0.000484s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:29:32+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/login?password=mywebqwepoi!@
+[运行时间：0.277269s] [吞吐率：3.61req/s] [内存消耗：2,278.66kb] [文件加载：40]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'mywebqwepoi!@',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010627s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.037957s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = '74be16979710d4c4e7c6647856088456' LIMIT 1 [ RunTime:0.000439s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:30:09+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/login?password=mywebqwepoi!@
+[运行时间：0.231021s] [吞吐率：4.33req/s] [内存消耗：2,279.66kb] [文件加载：40]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'mywebqwepoi!@',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009972s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.033229s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = '74be16979710d4c4e7c6647856088456' LIMIT 1 [ RunTime:0.000445s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:30:40+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/login?pwd=mywebqwepoi!@
+[运行时间：0.089261s] [吞吐率：11.20req/s] [内存消耗：2,278.68kb] [文件加载：40]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pwd' => 'mywebqwepoi!@',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009912s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.028345s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = '2036a42ca5ffd6ff01a282c32780c890' LIMIT 1 [ RunTime:0.000766s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:31:09+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/login?pwd=mywebqwepoi!@
+[运行时间：0.083071s] [吞吐率：12.04req/s] [内存消耗：2,279.60kb] [文件加载：40]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pwd' => 'mywebqwepoi!@',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001172s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.028713s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = '2036a42ca5ffd6ff01a282c32780c890' LIMIT 1 [ RunTime:0.000443s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:31:19+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/index/login?pwd=myworldqwepoi!@
+[运行时间：0.082688s] [吞吐率：12.09req/s] [内存消耗：2,279.36kb] [文件加载：40]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pwd' => 'myworldqwepoi!@',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011414s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.028660s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = 'c0d48e2fe69a1abb3e2bdfb59f54b219' LIMIT 1 [ RunTime:0.000458s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:31:45+08:00 ] 127.0.0.1 POST www.wuruyue.com/index/index/login
+[运行时间：0.081503s] [吞吐率：12.27req/s] [内存消耗：2,239.94kb] [文件加载：38]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-for' => '127.0.0.1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '22',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+  'pwd' => 'qwepoi!@#450',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010849s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.026494s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = 'b3ae2f3f06bd4ad75fb40952ce3dfc0e' LIMIT 1 [ RunTime:0.000836s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:32:10+08:00 ] 127.0.0.1 POST www.wuruyue.com/index/index/login
+[运行时间：0.128397s] [吞吐率：7.79req/s] [内存消耗：2,240.44kb] [文件加载：38]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-for' => '127.0.0.1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+  'pwd' => 'myworldqwepoi!@#450',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010474s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.025795s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = '821bf2234c46d81038d7dc52a700398f' LIMIT 1 [ RunTime:0.049560s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:32:41+08:00 ] 127.0.0.1 POST www.wuruyue.com/index/index/login
+[运行时间：0.079815s] [吞吐率：12.53req/s] [内存消耗：2,240.44kb] [文件加载：38]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-for' => '127.0.0.1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+  'pwd' => 'myworldqwepoi!@#450',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010686s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.030700s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = '821bf2234c46d81038d7dc52a700398f' LIMIT 1 [ RunTime:0.001019s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:34:15+08:00 ] 127.0.0.1 POST www.wuruyue.com/index/index/login
+[运行时间：0.238797s] [吞吐率：4.19req/s] [内存消耗：2,239.80kb] [文件加载：38]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-for' => '127.0.0.1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '29',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+  'pwd' => 'myworldqwepoi!@#450',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010059s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_user` [ RunTime:0.039844s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `t_m_user` WHERE  `password` = '821bf2234c46d81038d7dc52a700398f' LIMIT 1 [ RunTime:0.000427s ]
+---------------------------------------------------------------
+[ 2021-01-09T21:34:16+08:00 ] 127.0.0.1 POST www.wuruyue.com/index/index/getMenu
+[运行时间：0.200589s] [吞吐率：4.99req/s] [内存消耗：2,245.55kb] [文件加载：38]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-for' => '127.0.0.1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/myworld.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '2',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->getMenu[ D:\my web\tp5\app\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011392s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.050993s ]
+[ sql ] [ SQL ] SELECT * FROM `t_m_menu` WHERE  `state` = 0  AND `parent_menu_id` = 0 [ RunTime:0.075566s ]

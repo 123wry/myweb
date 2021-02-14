@@ -1,0 +1,234 @@
+---------------------------------------------------------------
+[ 2021-02-14T19:20:57+08:00 ] 127.0.0.1 GET www.wuruyue.com/
+[运行时间：6.097662s] [吞吐率：0.16req/s] [内存消耗：1,208.43kb] [文件加载：39]
+[ info ] [ LANG ] D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 2.0.50727)',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-02-14T19:21:26+08:00 ] 127.0.0.1 GET adsp.xunlei.com/api/adp/hotword?appId=14&callId=1613301685189&count=1&sig=6c7c5e83e97cd9d28efd5a6fa2a1dddb
+[运行时间：0.994680s] [吞吐率：1.01req/s] [内存消耗：896.67kb] [文件加载：29]
+[ info ] [ LANG ] D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'adp',
+    2 => 'hotword',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'adsp.xunlei.com',
+  'user-agent' => 'axios/0.18.0',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'application/json, text/plain, */*',
+)
+[ info ] [ PARAM ] array (
+  'appId' => '14',
+  'callId' => '1613301685189',
+  'count' => '1',
+  'sig' => '6c7c5e83e97cd9d28efd5a6fa2a1dddb',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-02-14T19:21:27+08:00 ] 127.0.0.1 POST adsp.xunlei.com/api/adp/get
+[运行时间：0.021622s] [吞吐率：46.25req/s] [内存消耗：897.18kb] [文件加载：29]
+[ info ] [ LANG ] D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'adp',
+    2 => 'get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'adsp.xunlei.com',
+  'content-length' => '146',
+  'user-agent' => 'axios/0.18.0',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'application/json, text/plain, */*',
+)
+[ info ] [ PARAM ] array (
+  'appId' => '14',
+  'callId' => '1613301685841',
+  'devicId' => '04922602584DYBKQ',
+  'identity' => '1',
+  'isAll' => '1',
+  'positionId' => '1304',
+  'shownOrderId' => '',
+  'v' => '1.0',
+  'sig' => 'f789fbf57ae5671f30a9f3dd14c49915',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-02-14T19:21:28+08:00 ] 127.0.0.1 GET adsp.xunlei.com/api/adp/get?positionId=1560&jsCall=ssp_callback_43463148&appId=101&callId=1613301688109&v=1.0&sig=2474b864a339acdceef546f282a87e37
+[运行时间：0.079452s] [吞吐率：12.59req/s] [内存消耗：1,003.52kb] [文件加载：32]
+[ info ] [ LANG ] D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'adp',
+    2 => 'get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) thunderx/10.1.38.890 Chrome/59.0.3071.115 Electron/1.8.6 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'adsp.xunlei.com',
+)
+[ info ] [ PARAM ] array (
+  'positionId' => '1560',
+  'jsCall' => 'ssp_callback_43463148',
+  'appId' => '101',
+  'callId' => '1613301688109',
+  'v' => '1.0',
+  'sig' => '2474b864a339acdceef546f282a87e37',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-02-14T19:41:44+08:00 ] 127.0.0.1 GET adsp.xunlei.com/api/adp/get?positionId=1560&jsCall=ssp_callback_77437430&appId=101&callId=1613302893831&v=1.0&sig=d7f141d976c075dc14e6ab397664d5c3
+[运行时间：5.418500s] [吞吐率：0.18req/s] [内存消耗：1,003.52kb] [文件加载：32]
+[ info ] [ LANG ] D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'adp',
+    2 => 'get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) thunderx/10.1.38.890 Chrome/59.0.3071.115 Electron/1.8.6 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'adsp.xunlei.com',
+)
+[ info ] [ PARAM ] array (
+  'positionId' => '1560',
+  'jsCall' => 'ssp_callback_77437430',
+  'appId' => '101',
+  'callId' => '1613302893831',
+  'v' => '1.0',
+  'sig' => 'd7f141d976c075dc14e6ab397664d5c3',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-02-14T19:41:49+08:00 ] 127.0.0.1 GET adsp.xunlei.com/api/adp/hotword?appId=14&callId=1613302893915&count=1&sig=771ef92ab4484adb5e40b8919b8f761a
+[运行时间：0.155284s] [吞吐率：6.44req/s] [内存消耗：896.67kb] [文件加载：29]
+[ info ] [ LANG ] D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'adp',
+    2 => 'hotword',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'adsp.xunlei.com',
+  'user-agent' => 'axios/0.18.0',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'application/json, text/plain, */*',
+)
+[ info ] [ PARAM ] array (
+  'appId' => '14',
+  'callId' => '1613302893915',
+  'count' => '1',
+  'sig' => '771ef92ab4484adb5e40b8919b8f761a',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-02-14T19:41:49+08:00 ] 127.0.0.1 POST adsp.xunlei.com/api/adp/get
+[运行时间：0.156581s] [吞吐率：6.39req/s] [内存消耗：897.18kb] [文件加载：29]
+[ info ] [ LANG ] D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'adp',
+    2 => 'get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'adsp.xunlei.com',
+  'content-length' => '146',
+  'user-agent' => 'axios/0.18.0',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'application/json, text/plain, */*',
+)
+[ info ] [ PARAM ] array (
+  'appId' => '14',
+  'callId' => '1613302895447',
+  'devicId' => '04922602584DYBKQ',
+  'identity' => '1',
+  'isAll' => '1',
+  'positionId' => '1304',
+  'shownOrderId' => '',
+  'v' => '1.0',
+  'sig' => 'c108473e245411ff3307a6dd71364e30',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-02-14T19:42:34+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=2
+[运行时间：2.597797s] [吞吐率：0.38req/s] [内存消耗：2,099.45kb] [文件加载：48]
+[ info ] [ LANG ] D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7353847808',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] ����Ŀ�����������ܾ����޷����ӡ�
+[D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\library\think\db\Connection.php:295]

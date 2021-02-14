@@ -1,0 +1,2448 @@
+---------------------------------------------------------------
+[ 2021-01-23T11:15:36+08:00 ] 127.0.0.1 POST www.wuruyue.com/index/Home/getChildMenu
+[运行时间：1.772465s] [吞吐率：0.56req/s] [内存消耗：2,532.01kb] [文件加载：45]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-for' => '127.0.0.1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/myworld.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'authorization' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC93d3cud3VydXl1ZS5jb20iLCJhdWQiOiJodHRwOlwvXC93d3cud3VydXl1ZS5jb20iLCJpYXQiOjE2MTEyNDIyNDcsIm5iZiI6MTYxMTI0MjI0NywiZXhwIjoxNjExMjQzNjg3LCJkYXRhIjp7InVzZXJpZCI6MSwicHdkIjoiODIxYmYyMjM0YzQ2ZDgxMDM4ZDdkYzUyYTcwMDM5OGYifX0.Ozm7yplYgYM6MbjBbjLP6Nb0wnQi2LQWl1o7d86dpVI',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+  'pid' => 1,
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.038087s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.119628s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 0 [ RunTime:0.041770s ]
+---------------------------------------------------------------
+[ 2021-01-23T12:22:58+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.369037s] [吞吐率：2.71req/s] [内存消耗：2,529.80kb] [文件加载：45]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011121s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.071643s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 0 [ RunTime:0.006619s ]
+---------------------------------------------------------------
+[ 2021-01-23T12:23:00+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.071468s] [吞吐率：13.99req/s] [内存消耗：2,529.80kb] [文件加载：45]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000858s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.025689s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 0 [ RunTime:0.000569s ]
+---------------------------------------------------------------
+[ 2021-01-23T12:23:42+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.088305s] [吞吐率：11.32req/s] [内存消耗：2,530.17kb] [文件加载：45]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000726s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.033413s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 0 [ RunTime:0.000639s ]
+---------------------------------------------------------------
+[ 2021-01-23T12:23:44+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.110464s] [吞吐率：9.05req/s] [内存消耗：2,530.17kb] [文件加载：45]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010286s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.033160s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 0 [ RunTime:0.000820s ]
+---------------------------------------------------------------
+[ 2021-01-23T12:23:58+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.132225s] [吞吐率：7.56req/s] [内存消耗：2,530.16kb] [文件加载：45]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001416s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.038445s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 0 [ RunTime:0.000827s ]
+---------------------------------------------------------------
+[ 2021-01-23T12:24:32+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.136043s] [吞吐率：7.35req/s] [内存消耗：2,530.38kb] [文件加载：45]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001148s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.038492s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 0 [ RunTime:0.000758s ]
+---------------------------------------------------------------
+[ 2021-01-23T12:25:05+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.559325s] [吞吐率：1.79req/s] [内存消耗：2,596.98kb] [文件加载：50]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001043s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.035993s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.001949s ]
+[ error ] [2]Missing argument 1 for app\index\controller\Home::getMenu(), called in D:\my web\tp5\app\index\controller\Home.php on line 45 and defined[D:\my web\tp5\app\index\controller\Home.php:26]
+---------------------------------------------------------------
+[ 2021-01-23T12:34:28+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.214352s] [吞吐率：4.67req/s] [内存消耗：2,597.20kb] [文件加载：50]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001170s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.046595s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.001002s ]
+[ error ] [8]Object of class app\index\model\MMenu could not be converted to int[D:\my web\tp5\app\index\controller\Home.php:36]
+---------------------------------------------------------------
+[ 2021-01-23T12:36:30+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.232494s] [吞吐率：4.30req/s] [内存消耗：2,651.47kb] [文件加载：50]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010420s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.040509s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000880s ]
+[ error ] [1]Function name must be a string[D:\my web\tp5\app\index\controller\Home.php:22]
+---------------------------------------------------------------
+[ 2021-01-23T12:36:42+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.190539s] [吞吐率：5.25req/s] [内存消耗：2,519.63kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011783s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.036535s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000930s ]
+---------------------------------------------------------------
+[ 2021-01-23T12:37:23+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.167143s] [吞吐率：5.98req/s] [内存消耗：2,596.83kb] [文件加载：50]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012321s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.052006s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.001657s ]
+[ error ] [8]未定义数组索引: data[D:\my web\tp5\app\index\controller\Home.php:23]
+---------------------------------------------------------------
+[ 2021-01-23T12:37:41+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.087940s] [吞吐率：11.37req/s] [内存消耗：2,519.63kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001004s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.029323s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000936s ]
+---------------------------------------------------------------
+[ 2021-01-23T12:38:14+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.113455s] [吞吐率：8.81req/s] [内存消耗：2,475.48kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001229s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.042006s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000806s ]
+---------------------------------------------------------------
+[ 2021-01-23T12:39:17+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.119863s] [吞吐率：8.34req/s] [内存消耗：2,519.63kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001026s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.028465s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000903s ]
+---------------------------------------------------------------
+[ 2021-01-23T12:42:14+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.201528s] [吞吐率：4.96req/s] [内存消耗：2,598.53kb] [文件加载：50]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001258s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.039823s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.001779s ]
+[ error ] [2]Missing argument 1 for think\Model::data(), called in D:\my web\tp5\thinkphp\library\think\Model.php on line 620 and defined[D:\my web\tp5\thinkphp\library\think\Model.php:340]
+---------------------------------------------------------------
+[ 2021-01-23T12:42:30+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.134390s] [吞吐率：7.44req/s] [内存消耗：2,477.63kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001109s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.047714s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000941s ]
+---------------------------------------------------------------
+[ 2021-01-23T12:43:04+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.130848s] [吞吐率：7.64req/s] [内存消耗：2,519.63kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001118s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.036995s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000943s ]
+---------------------------------------------------------------
+[ 2021-01-23T12:43:58+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.142289s] [吞吐率：7.03req/s] [内存消耗：2,651.66kb] [文件加载：50]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001250s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.038410s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.001066s ]
+[ error ] [1]Call to a member function fetch() on a non-object[D:\my web\tp5\app\index\controller\Home.php:22]
+---------------------------------------------------------------
+[ 2021-01-23T12:44:08+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.123330s] [吞吐率：8.11req/s] [内存消耗：2,651.69kb] [文件加载：50]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001024s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.032711s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000951s ]
+[ error ] [1]Call to a member function all() on a non-object[D:\my web\tp5\app\index\controller\Home.php:22]
+---------------------------------------------------------------
+[ 2021-01-23T12:44:17+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.124542s] [吞吐率：8.03req/s] [内存消耗：2,651.73kb] [文件加载：50]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001008s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.031097s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000757s ]
+[ error ] [1]Call to a member function fetchAll() on a non-object[D:\my web\tp5\app\index\controller\Home.php:22]
+---------------------------------------------------------------
+[ 2021-01-23T12:44:27+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.122172s] [吞吐率：8.19req/s] [内存消耗：2,519.63kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001115s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.035240s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000780s ]
+---------------------------------------------------------------
+[ 2021-01-23T12:48:42+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.097093s] [吞吐率：10.30req/s] [内存消耗：2,566.29kb] [文件加载：49]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [0]method not exist:think\db\Query->all[D:\my web\tp5\thinkphp\library\think\db\Query.php:103]
+---------------------------------------------------------------
+[ 2021-01-23T12:49:02+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.118343s] [吞吐率：8.45req/s] [内存消耗：2,519.63kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001102s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.033353s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.001382s ]
+---------------------------------------------------------------
+[ 2021-01-23T12:51:01+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.134485s] [吞吐率：7.44req/s] [内存消耗：2,519.63kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010771s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.041361s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.001077s ]
+---------------------------------------------------------------
+[ 2021-01-23T14:30:48+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.388684s] [吞吐率：2.57req/s] [内存消耗：2,573.83kb] [文件加载：50]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for think\db\Query::data(), called in D:\my web\tp5\app\index\controller\Home.php on line 21 and defined[D:\my web\tp5\thinkphp\library\think\db\Query.php:894]
+---------------------------------------------------------------
+[ 2021-01-23T15:34:20+08:00 ] 127.0.0.1 POST www.wuruyue.com/index/Home/getChildMenu
+[运行时间：1.173943s] [吞吐率：0.85req/s] [内存消耗：2,449.43kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-for' => '127.0.0.1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/myworld.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'authorization' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC93d3cud3VydXl1ZS5jb20iLCJhdWQiOiJodHRwOlwvXC93d3cud3VydXl1ZS5jb20iLCJpYXQiOjE2MTEyNDIyNDcsIm5iZiI6MTYxMTI0MjI0NywiZXhwIjoxNjExMjQzNjg3LCJkYXRhIjp7InVzZXJpZCI6MSwicHdkIjoiODIxYmYyMjM0YzQ2ZDgxMDM4ZDdkYzUyYTcwMDM5OGYifX0.Ozm7yplYgYM6MbjBbjLP6Nb0wnQi2LQWl1o7d86dpVI',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+  'pid' => 1,
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.208392s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.243841s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 LIMIT 1 [ RunTime:0.039015s ]
+---------------------------------------------------------------
+[ 2021-01-23T15:34:33+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.269092s] [吞吐率：3.72req/s] [内存消耗：2,519.63kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000713s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.037885s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.001090s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:08:05+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.263558s] [吞吐率：3.79req/s] [内存消耗：2,519.63kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010127s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.033879s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.001171s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:08:53+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.100579s] [吞吐率：9.94req/s] [内存消耗：2,478.43kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002620s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.041160s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000768s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:09:14+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.388753s] [吞吐率：2.57req/s] [内存消耗：2,598.85kb] [文件加载：50]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010056s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.032004s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000723s ]
+[ error ] [2]Missing argument 1 for think\Model::data(), called in D:\my web\tp5\thinkphp\library\think\Model.php on line 620 and defined[D:\my web\tp5\thinkphp\library\think\Model.php:340]
+---------------------------------------------------------------
+[ 2021-01-23T16:09:26+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.098212s] [吞吐率：10.18req/s] [内存消耗：2,478.43kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000924s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.045272s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000664s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:09:45+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.084984s] [吞吐率：11.77req/s] [内存消耗：2,598.84kb] [文件加载：50]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000937s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.024683s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000650s ]
+[ error ] [2]Missing argument 1 for think\Model::data(), called in D:\my web\tp5\thinkphp\library\think\Model.php on line 620 and defined[D:\my web\tp5\thinkphp\library\think\Model.php:340]
+---------------------------------------------------------------
+[ 2021-01-23T16:09:56+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.076266s] [吞吐率：13.11req/s] [内存消耗：2,478.43kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000844s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.028574s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000997s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:10:25+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.098953s] [吞吐率：10.11req/s] [内存消耗：2,598.82kb] [文件加载：50]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001096s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.027572s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000802s ]
+[ error ] [2]Missing argument 1 for think\Model::data(), called in D:\my web\tp5\thinkphp\library\think\Model.php on line 620 and defined[D:\my web\tp5\thinkphp\library\think\Model.php:340]
+---------------------------------------------------------------
+[ 2021-01-23T16:17:05+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.087574s] [吞吐率：11.42req/s] [内存消耗：2,478.43kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001127s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.029490s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000989s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:18:48+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.101657s] [吞吐率：9.84req/s] [内存消耗：2,478.76kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011251s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.026179s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000725s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:18:48+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.064494s] [吞吐率：15.51req/s] [内存消耗：2,478.76kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000813s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.013085s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000663s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:18:49+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.072968s] [吞吐率：13.70req/s] [内存消耗：2,478.76kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000821s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.026259s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000596s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:18:52+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.080463s] [吞吐率：12.43req/s] [内存消耗：2,478.76kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000786s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.028368s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.001237s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:18:53+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.093419s] [吞吐率：10.70req/s] [内存消耗：2,478.76kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010731s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.024633s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000762s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:19:06+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.076984s] [吞吐率：12.99req/s] [内存消耗：2,479.27kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000834s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.026557s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000613s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:19:07+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.072867s] [吞吐率：13.72req/s] [内存消耗：2,479.27kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000986s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.027273s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000767s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:19:26+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.116229s] [吞吐率：8.60req/s] [内存消耗：2,598.87kb] [文件加载：50]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009987s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.032348s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000776s ]
+[ error ] [2]Missing argument 1 for think\Model::data(), called in D:\my web\tp5\thinkphp\library\think\Model.php on line 620 and defined[D:\my web\tp5\thinkphp\library\think\Model.php:340]
+---------------------------------------------------------------
+[ 2021-01-23T16:19:38+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.090821s] [吞吐率：11.01req/s] [内存消耗：2,598.91kb] [文件加载：50]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010860s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.023292s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000771s ]
+[ error ] [2]Missing argument 1 for think\Model::data(), called in D:\my web\tp5\thinkphp\library\think\Model.php on line 620 and defined[D:\my web\tp5\thinkphp\library\think\Model.php:340]
+---------------------------------------------------------------
+[ 2021-01-23T16:19:38+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.072726s] [吞吐率：13.75req/s] [内存消耗：2,598.91kb] [文件加载：50]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000837s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.013826s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000682s ]
+[ error ] [2]Missing argument 1 for think\Model::data(), called in D:\my web\tp5\thinkphp\library\think\Model.php on line 620 and defined[D:\my web\tp5\thinkphp\library\think\Model.php:340]
+---------------------------------------------------------------
+[ 2021-01-23T16:19:57+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.070993s] [吞吐率：14.09req/s] [内存消耗：2,479.21kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000842s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.024574s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000622s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:20:32+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.088058s] [吞吐率：11.36req/s] [内存消耗：2,478.43kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010605s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.026900s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000597s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:20:42+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.087810s] [吞吐率：11.39req/s] [内存消耗：2,479.21kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000935s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.028220s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.001358s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:21:07+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.087764s] [吞吐率：11.39req/s] [内存消耗：2,478.43kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010791s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000840s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:26:58+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.153528s] [吞吐率：6.51req/s] [内存消耗：2,597.23kb] [文件加载：50]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010892s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.026630s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000691s ]
+[ error ] [8]Object of class app\index\model\MMenu could not be converted to int[D:\my web\tp5\app\index\controller\Home.php:36]
+---------------------------------------------------------------
+[ 2021-01-23T16:27:31+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.092379s] [吞吐率：10.82req/s] [内存消耗：2,597.28kb] [文件加载：50]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000896s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.028652s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000756s ]
+[ error ] [8]Object of class app\index\model\MMenu could not be converted to int[D:\my web\tp5\app\index\controller\Home.php:31]
+---------------------------------------------------------------
+[ 2021-01-23T16:37:00+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.087243s] [吞吐率：11.46req/s] [内存消耗：2,519.56kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001062s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.025117s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000771s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:41:23+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.085305s] [吞吐率：11.72req/s] [内存消耗：2,476.41kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001035s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.031211s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.001023s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:41:36+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.090229s] [吞吐率：11.08req/s] [内存消耗：2,597.55kb] [文件加载：50]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000861s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.025135s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.001349s ]
+[ error ] [8]Object of class app\index\model\MMenu could not be converted to int[D:\my web\tp5\app\index\controller\Home.php:36]
+---------------------------------------------------------------
+[ 2021-01-23T16:41:58+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.086643s] [吞吐率：11.54req/s] [内存消耗：2,597.57kb] [文件加载：50]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001078s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.025808s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000651s ]
+[ error ] [8]Object of class app\index\model\MMenu could not be converted to int[D:\my web\tp5\app\index\controller\Home.php:36]
+---------------------------------------------------------------
+[ 2021-01-23T16:42:05+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.094737s] [吞吐率：10.56req/s] [内存消耗：2,597.11kb] [文件加载：50]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010130s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.024989s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000812s ]
+[ error ] [8]Object of class app\index\model\MMenu could not be converted to int[D:\my web\tp5\app\index\controller\Home.php:36]
+---------------------------------------------------------------
+[ 2021-01-23T16:42:13+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.099705s] [吞吐率：10.03req/s] [内存消耗：2,597.12kb] [文件加载：50]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000963s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.035916s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000847s ]
+[ error ] [8]Object of class app\index\model\MMenu could not be converted to int[D:\my web\tp5\app\index\controller\Home.php:36]
+---------------------------------------------------------------
+[ 2021-01-23T16:42:37+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.086619s] [吞吐率：11.54req/s] [内存消耗：2,476.41kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000828s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.028450s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000684s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:43:00+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.079318s] [吞吐率：12.61req/s] [内存消耗：2,476.05kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000837s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.023101s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000658s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:43:17+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.081671s] [吞吐率：12.24req/s] [内存消耗：2,476.49kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000850s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.024548s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000958s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:43:52+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.074877s] [吞吐率：13.36req/s] [内存消耗：2,476.30kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000860s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.023478s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000682s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:44:02+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.104147s] [吞吐率：9.60req/s] [内存消耗：2,597.11kb] [文件加载：50]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010998s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.029471s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000821s ]
+[ error ] [8]Object of class app\index\model\MMenu could not be converted to int[D:\my web\tp5\app\index\controller\Home.php:36]
+---------------------------------------------------------------
+[ 2021-01-23T16:45:29+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.089260s] [吞吐率：11.20req/s] [内存消耗：2,597.90kb] [文件加载：50]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000785s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.024112s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.001654s ]
+[ error ] [8]Object of class app\index\model\MMenu could not be converted to int[D:\my web\tp5\app\index\controller\Home.php:36]
+---------------------------------------------------------------
+[ 2021-01-23T16:45:53+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.079905s] [吞吐率：12.51req/s] [内存消耗：2,477.10kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001339s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.024781s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.001721s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:46:08+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.075204s] [吞吐率：13.30req/s] [内存消耗：2,477.42kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000843s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.024519s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.001017s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:46:34+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.084189s] [吞吐率：11.88req/s] [内存消耗：2,597.90kb] [文件加载：50]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000881s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.024209s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000961s ]
+[ error ] [8]Object of class app\index\model\MMenu could not be converted to int[D:\my web\tp5\app\index\controller\Home.php:36]
+---------------------------------------------------------------
+[ 2021-01-23T16:47:01+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.132248s] [吞吐率：7.56req/s] [内存消耗：2,598.52kb] [文件加载：50]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011895s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.024950s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000723s ]
+[ error ] [8]Object of class app\index\model\MMenu could not be converted to int[D:\my web\tp5\app\index\controller\Home.php:36]
+---------------------------------------------------------------
+[ 2021-01-23T16:48:17+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.088504s] [吞吐率：11.30req/s] [内存消耗：2,598.09kb] [文件加载：50]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001399s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.025026s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000691s ]
+[ error ] [8]Object of class app\index\model\MMenu could not be converted to int[D:\my web\tp5\app\index\controller\Home.php:32]
+---------------------------------------------------------------
+[ 2021-01-23T16:48:40+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.129511s] [吞吐率：7.72req/s] [内存消耗：2,534.93kb] [文件加载：45]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000924s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.043917s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000654s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:54:17+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.091471s] [吞吐率：10.93req/s] [内存消耗：2,534.93kb] [文件加载：45]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000998s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.027677s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000785s ]
+---------------------------------------------------------------
+[ 2021-01-23T16:54:28+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.090107s] [吞吐率：11.10req/s] [内存消耗：2,534.93kb] [文件加载：45]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000816s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.034896s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000670s ]
+---------------------------------------------------------------
+[ 2021-01-23T17:00:14+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getChildMenu?pid=1
+[运行时间：0.079303s] [吞吐率：12.61req/s] [内存消耗：2,477.73kb] [文件加载：41]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.wuruyue.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=7353847808',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000965s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.026337s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 1 [ RunTime:0.000687s ]

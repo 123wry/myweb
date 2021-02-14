@@ -1,0 +1,42 @@
+---------------------------------------------------------------
+[ 2021-02-02T23:22:25+08:00 ] 127.0.0.1 POST www.wuruyue.com/index/Home/getChildMenu
+[运行时间：0.658218s] [吞吐率：1.52req/s] [内存消耗：2,534.63kb] [文件加载：45]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getChildMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-for' => '127.0.0.1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/myworld.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
+  'authorization' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC93d3cud3VydXl1ZS5jb20iLCJhdWQiOiJodHRwOlwvXC93d3cud3VydXl1ZS5jb20iLCJpYXQiOjE2MTIwMTQ3NTIsIm5iZiI6MTYxMjAxNDc1MiwiZXhwIjoxNjEyMDE2MTkyLCJkYXRhIjp7InVzZXJpZCI6MSwicHdkIjoiODIxYmYyMjM0YzQ2ZDgxMDM4ZDdkYzUyYTcwMDM5OGYifX0.pFx8_zSpkhWh2eKBHduLdoUbs0n2a8m9CCwa3qKmlyE',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+  'pid' => 1,
+)
+[ info ] [ RUN ] app\index\controller\Home->getChildMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.071684s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.110768s ]
+[ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 0 [ RunTime:0.038531s ]

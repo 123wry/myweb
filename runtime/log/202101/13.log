@@ -1,0 +1,40 @@
+---------------------------------------------------------------
+[ 2021-01-13T22:13:13+08:00 ] 127.0.0.1 POST www.wuruyue.com/index/Home/getMenu
+[运行时间：0.972864s] [吞吐率：1.03req/s] [内存消耗：2,291.02kb] [文件加载：40]
+[ info ] [ LANG ] D:\my web\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-for' => '127.0.0.1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/myworld.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '2',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Home->getMenu[ D:\my web\tp5\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.108098s ] mysql:host=127.0.0.1;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.186583s ]
+[ sql ] [ SQL ] SELECT * FROM `t_m_menu` WHERE  `state` = 0  AND `parent_menu_id` = 0 [ RunTime:0.008788s ]
