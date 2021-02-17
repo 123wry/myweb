@@ -123,3 +123,119 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.184843s ] mysql:host=39.108.231.59;dbname=ours;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.082141s ]
 [ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 0 [ RunTime:0.081192s ]
+---------------------------------------------------------------
+[ 2021-02-17T20:18:10+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getTag
+[运行时间：0.949699s] [吞吐率：1.05req/s] [内存消耗：1,250.40kb] [文件加载：42]
+[ info ] [ LANG ] D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getTag',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-02-17T20:18:19+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getTags
+[运行时间：0.461835s] [吞吐率：2.17req/s] [内存消耗：2,133.37kb] [文件加载：51]
+[ info ] [ LANG ] D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getTags',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Home->getTags[ D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.131066s ] mysql:host=39.108.231.59;dbname=ours;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ours.t_tag' doesn't exist[D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2021-02-17T20:19:52+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getTags
+[运行时间：0.377110s] [吞吐率：2.65req/s] [内存消耗：1,254.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getTags',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Home->getTags[ D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\app\index\controller\Home.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class 'app\index\model\Tag' not found[D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\app\index\controller\Home.php:56]
+---------------------------------------------------------------
+[ 2021-02-17T20:20:17+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getTags
+[运行时间：0.351598s] [吞吐率：2.84req/s] [内存消耗：2,042.66kb] [文件加载：45]
+[ info ] [ LANG ] D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getTags',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Home->getTags[ D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.108253s ] mysql:host=39.108.231.59;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_tag` [ RunTime:0.062456s ]
+[ sql ] [ SQL ] SELECT * FROM `t_m_tag` WHERE  `tag_status` = 0 [ RunTime:0.077092s ]
