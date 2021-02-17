@@ -51,7 +51,7 @@ class Home extends Base
 
     }
 
-    public function getTags()
+    public function gettags()
     {
         $tag = new MTag();
         $ret = $tag->where("tag_status",0)->select();
