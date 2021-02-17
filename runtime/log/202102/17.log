@@ -398,3 +398,35 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.130713s ] mysql:host=39.108.231.59;dbname=ours;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_tag` [ RunTime:0.083194s ]
 [ sql ] [ SQL ] SELECT * FROM `t_m_tag` WHERE  `tag_status` = 0 [ RunTime:0.090284s ]
+---------------------------------------------------------------
+[ 2021-02-17T20:40:28+08:00 ] 127.0.0.1 GET www.wuruyue.com/index/Home/getTags
+[运行时间：0.682166s] [吞吐率：1.47req/s] [内存消耗：2,042.66kb] [文件加载：45]
+[ info ] [ LANG ] D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Home',
+    2 => 'getTags',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.wuruyue.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Home->getTags[ D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\app\index\controller\Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.116266s ] mysql:host=39.108.231.59;dbname=ours;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_tag` [ RunTime:0.073199s ]
+[ sql ] [ SQL ] SELECT * FROM `t_m_tag` WHERE  `tag_status` = 0 [ RunTime:0.075154s ]

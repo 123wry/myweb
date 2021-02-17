@@ -54,7 +54,7 @@ class Home extends Base
     public function getTags()
     {
         $tag = new MTag();
-        $ret = $tag->where("tag_status",0)->select();
+        $ret = $tag->select();
         return $this->ajaxReturn($ret);
     }
 
