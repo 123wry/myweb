@@ -2,6 +2,7 @@
 namespace app\index\controller;
 
 use app\index\model\MMenu;
+use app\index\model\Tag;
 
 class Home extends Base
 {
@@ -49,4 +50,12 @@ class Home extends Base
         }
 
     }
+
+    public function getTags()
+    {
+        $tag = new Tag();
+        $ret = $tag->where("tag_status",0)->select();
+        return $this->ajaxReturn($ret);
+    }
+
 }
