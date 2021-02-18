@@ -2,6 +2,7 @@
 namespace app\index\controller;
 
 namespace app\index\controller;
+use app\index\model\MMd5;
 use app\index\model\MRu;
 use app\index\model\MUser;
 use think\cache\driver\Redis;
@@ -56,6 +57,12 @@ class Index extends Controller
         }
         return json_encode($ret);
     }
-
+    public function getMd5Encode()
+    {
+        $str = input('str');
+        $md5 = new MMd5();
+        $ret = $md5->where("md5str",$str)->find();
+        return json_encode($ret);
+    }
 
 }
