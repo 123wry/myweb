@@ -59,9 +59,18 @@ class Index extends Controller
     }
     public function getMd5Encode()
     {
+        $redis = new Redis();
         $str = input('str');
-        $md5 = new MMd5();
-        $ret = $md5->where("md5str",$str)->find();
+        $res = $redis->get($str);
+        if($res){
+            $ret = $res;
+        } else {
+            $md5 = new MMd5();
+            $ret = $md5->where("md5str", $str)->find();
+            if (!empty($ret)) {
+                $redis->set($str, $ret);
+            }
+        }
         return json_encode($ret);
     }
 
