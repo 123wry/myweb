@@ -63,12 +63,12 @@ class Index extends Controller
         $str = input('str');
         $res = $redis->get($str);
         if($res){
-            $ret = $res;
+            $ret = array('str'=>$res);
         } else {
             $md5 = new MMd5();
             $ret = $md5->where("md5str", $str)->find();
             if (!empty($ret)) {
-                $redis->set($str, $ret);
+                $redis->set($str, $ret['str']);
             }
         }
         return json_encode($ret);
