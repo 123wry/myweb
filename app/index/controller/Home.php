@@ -91,18 +91,18 @@ class Home extends Base
         }
         $article = new MArticle();
         $mtag = new MTag();
-        $article_id =$article->data(array(
+        $article_id =$article->data([
             "title"=>$title,
             "editor"=>$editor,
             "tags"=>$tag,
             "fileList"=>$fileList[0]
-        ));
+        ]);
         $article->save();
         foreach ($tags as $t) {
-            $result = $mtag->data(array(
+            $result = $mtag->data([
                 "tag_id" =>$t,
                 "article_id"=>$article_id
-            ));
+            ]);
             $mtag->save();
         }
         if(!empty($result)){
