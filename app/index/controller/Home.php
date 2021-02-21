@@ -67,7 +67,7 @@ class Home extends Base
         $title = input("title");
         $tags = input("tags/a");
         $fileList = input("fileList/a");
-        $files = file_get_contents($fileList[0]['url']);
+        $files = $fileList[0]['url'];
         $editor = input("editor");
         if(empty($title)){
             $ret['errno'] = 400;
