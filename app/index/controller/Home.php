@@ -91,17 +91,19 @@ class Home extends Base
         }
         $article = new MArticle();
         $mtag = new MTag();
-        $article_id =$article->add(array(
+        $article_id =$article->data(array(
             "title"=>$title,
             "editor"=>$editor,
             "tags"=>$tag,
             "fileList"=>$fileList[0]
         ));
+        $article->save();
         foreach ($tags as $t) {
-            $result = $mtag->add(array(
+            $result = $mtag->data(array(
                 "tag_id" =>$t,
                 "article_id"=>$article_id
             ));
+            $mtag->save();
         }
         if(!empty($result)){
             $ret['errno'] = 400;
