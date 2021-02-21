@@ -102,20 +102,20 @@ class Home extends Base
             "fileList"=>$files
         ]);
         $article->save();
-//        foreach ($tags as $t) {
-//            $result = $mtag->data([
-//                "tag_id" =>$t,
-//                "article_id"=>$article_id
-//            ]);
-//            $mtag->save();
-//        }
-//        if(!empty($result)){
-//            $ret['errno'] = 400;
-//            $ret['errmsg'] = '提交失败';
-//        } else {
-//            $ret['errno'] = 200;
-//            $ret['errmsg'] = '提交成功';
-//        }
-//        $this->ajaxReturn($ret);
+        foreach ($tags as $t) {
+           $mtag->data([
+                "tag_id" =>$t,
+                "article_id"=>$article_id
+            ]);
+            $result = $mtag->save();
+        }
+        if(!empty($result)){
+            $ret['errno'] = 400;
+            $ret['errmsg'] = '提交失败';
+        } else {
+            $ret['errno'] = 200;
+            $ret['errmsg'] = '提交成功';
+        }
+        $this->ajaxReturn($ret);
     }
 }
