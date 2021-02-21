@@ -67,7 +67,7 @@ class Home extends Base
         $title = input("title");
         $tags = input("tags/a");
         $fileList = input("fileList/a");dump($fileList);
-//        $files = base64_encode(file_get_contents($fileList[0]['name']));
+        $files = base64_encode(file_get_contents($fileList[0]['tmp_name']));
         $editor = input("editor");
         if(empty($title)){
             $ret['errno'] = 400;
