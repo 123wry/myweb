@@ -101,7 +101,8 @@ class Home extends Base
             "tags"=>$tag,
             "fileList"=>$files
         ]);
-        $article_id = $article->save();
+        $article->save();
+        $article_id = $article->article_id;
         foreach ($tags as $t) {
            $mtag->data([
                 "tag_id" =>$t['tag_id'],
