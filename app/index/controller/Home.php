@@ -89,8 +89,8 @@ class Home extends Base
             $ret['errmsg'] = '正文不能为空';
             $this->ajaxReturn($ret);exit;
         }
-        $article = new MArticle();
-        $mtag = new MTag();
+        $article = new MArticle;
+        $mtag = new MTag;
         $article_id =$article->data([
             "title"=>$title,
             "editor"=>$editor,
