@@ -73,12 +73,12 @@ class Home extends Base
         if(empty($title)){
             $ret['errno'] = 400;
             $ret['errmsg'] = '主题不能为空';
-            $this->ajaxReturn($ret);exit;
+            return $this->ajaxReturn($ret);
         }
         if(count($tags) == 0){
             $ret['errno'] = 400;
             $ret['errmsg'] = '标签不能为空';
-            $this->ajaxReturn($ret);exit;
+            return $this->ajaxReturn($ret);
         }
         foreach ($tags as $t){
             $tag .= $t['tag_id'].',';
@@ -87,12 +87,12 @@ class Home extends Base
         if(count($fileList) == 0){
             $ret['errno'] = 400;
             $ret['errmsg'] = '封面不能为空';
-            $this->ajaxReturn($ret);exit;
+            return $this->ajaxReturn($ret);
         }
         if($editor == ''){
             $ret['errno'] = 400;
             $ret['errmsg'] = '正文不能为空';
-            $this->ajaxReturn($ret);exit;
+            return $this->ajaxReturn($ret);
         }
         $article = new MArticle();
         $matag = new MAtag();
@@ -118,6 +118,6 @@ class Home extends Base
             $ret['errno'] = 200;
             $ret['errmsg'] = '提交成功';
         }
-        $this->ajaxReturn($ret);
+        return $this->ajaxReturn($ret);
     }
 }
