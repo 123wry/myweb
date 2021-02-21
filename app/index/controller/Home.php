@@ -66,8 +66,8 @@ class Home extends Base
         $tag = '';
         $title = input("title");
         $tags = input("tags/a");
-        $fileList = $_FILES["fileList"];dump($fileList);
-        $files = base64_encode(file_get_contents($fileList[0]['tmp_name']));
+        $fileList = input("fileList");
+        $files = file_get_contents($fileList[0]['url']);
         $editor = input("editor");
         if(empty($title)){
             $ret['errno'] = 400;
@@ -95,27 +95,27 @@ class Home extends Base
         }
         $article = new MArticle();
         $mtag = new MTag();
-//        $article_id =$article->data([
-//            "title"=>$title,
-//            "editor"=>$editor,
-//            "tags"=>$tag,
-//            "fileList"=>$files
-//        ]);
-//        $article->save();
-//        foreach ($tags as $t) {
-//            $result = $mtag->data([
-//                "tag_id" =>$t,
-//                "article_id"=>$article_id
-//            ]);
-//            $mtag->save();
-//        }
-//        if(!empty($result)){
-//            $ret['errno'] = 400;
-//            $ret['errmsg'] = '提交失败';
-//        } else {
-//            $ret['errno'] = 200;
-//            $ret['errmsg'] = '提交成功';
-//        }
-//        $this->ajaxReturn($ret);
+        $article_id =$article->data([
+            "title"=>$title,
+            "editor"=>$editor,
+            "tags"=>$tag,
+            "fileList"=>$files
+        ]);
+        $article->save();
+        foreach ($tags as $t) {
+            $result = $mtag->data([
+                "tag_id" =>$t,
+                "article_id"=>$article_id
+            ]);
+            $mtag->save();
+        }
+        if(!empty($result)){
+            $ret['errno'] = 400;
+            $ret['errmsg'] = '提交失败';
+        } else {
+            $ret['errno'] = 200;
+            $ret['errmsg'] = '提交成功';
+        }
+        $this->ajaxReturn($ret);
     }
 }
