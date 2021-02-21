@@ -2,6 +2,7 @@
 namespace app\index\controller;
 
 use app\index\model\MArticle;
+use app\index\model\MAtag;
 use app\index\model\MMenu;
 use app\index\model\MTag;
 
