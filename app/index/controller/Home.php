@@ -65,7 +65,7 @@ class Home extends Base
     {
         $tag = '';
         $title = input("title");
-        $tags = input("tags");
+        $tags = input("tags/a");
 //        $fileList = input("fileList");
         dump($tags);
 //        $editor = input("editor");
