@@ -81,7 +81,7 @@ class Home extends Base
             $this->ajaxReturn($ret);exit;
         }
         foreach ($tags as $t){
-            $tag = $t['tag_id'].',';
+            $tag .= $t['tag_id'].',';
         }
         $tag = trim($tag,',');
         if(count($fileList) == 0){
@@ -105,12 +105,12 @@ class Home extends Base
         $article->save();
         $article_id = $article->article_id;
         foreach ($tags as $t) {
-           $matag->data([
+           $tagList[] = array(
                 "tag_id" =>$t['tag_id'],
                 "article_id"=>$article_id
-            ]);
-            $result = $matag->save();
+           );
         }
+        $result = $matag->saveAll($tagList);
         if(!empty($result)){
             $ret['errno'] = 400;
             $ret['errmsg'] = '提交失败';
