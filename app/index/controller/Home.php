@@ -67,6 +67,7 @@ class Home extends Base
         $title = input("title");
         $tags = input("tags");
         $fileList = input("fileList");
+        dump($fileList);
         $editor = input("editor");
         if(empty($title)){
             $ret['errno'] = 400;
@@ -89,29 +90,29 @@ class Home extends Base
             $ret['errmsg'] = '正文不能为空';
             $this->ajaxReturn($ret);exit;
         }
-        $article = new MArticle;
-        $mtag = new MTag;
-        $article_id =$article->data([
-            "title"=>$title,
-            "editor"=>$editor,
-            "tags"=>$tag,
-            "fileList"=>$fileList[0]
-        ]);
-        $article->save();
-        foreach ($tags as $t) {
-            $result = $mtag->data([
-                "tag_id" =>$t,
-                "article_id"=>$article_id
-            ]);
-            $mtag->save();
-        }
-        if(!empty($result)){
-            $ret['errno'] = 400;
-            $ret['errmsg'] = '提交失败';
-        } else {
-            $ret['errno'] = 200;
-            $ret['errmsg'] = '提交成功';
-        }
-        $this->ajaxReturn($ret);
+        $article = new MArticle();
+        $mtag = new MTag();
+//        $article_id =$article->data([
+//            "title"=>$title,
+//            "editor"=>$editor,
+//            "tags"=>$tag,
+//            "fileList"=>$fileList[0]
+//        ]);
+//        $article->save();
+//        foreach ($tags as $t) {
+//            $result = $mtag->data([
+//                "tag_id" =>$t,
+//                "article_id"=>$article_id
+//            ]);
+//            $mtag->save();
+//        }
+//        if(!empty($result)){
+//            $ret['errno'] = 400;
+//            $ret['errmsg'] = '提交失败';
+//        } else {
+//            $ret['errno'] = 200;
+//            $ret['errmsg'] = '提交成功';
+//        }
+//        $this->ajaxReturn($ret);
     }
 }
