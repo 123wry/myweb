@@ -111,7 +111,7 @@ class Home extends Base
            );
         }
         $result = $matag->saveAll($tagList);
-        if(!empty($result)){
+        if(empty($result)){
             $ret['errno'] = 400;
             $ret['errmsg'] = '提交失败';
         } else {
