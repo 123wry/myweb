@@ -94,7 +94,7 @@ class Home extends Base
             $this->ajaxReturn($ret);exit;
         }
         $article = new MArticle();
-        $matag = new MATag();
+        $matag = new MAtag();
         $article->data([
             "title"=>$title,
             "editor"=>$editor,
