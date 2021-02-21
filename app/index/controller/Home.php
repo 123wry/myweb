@@ -65,33 +65,33 @@ class Home extends Base
     {
         $tag = '';
         $title = input("title");
-        $tags = input("tags");
+//        $tags = input("tags");
 //        $fileList = input("fileList");
 //        dump($fileList);
-        $editor = input("editor");
+//        $editor = input("editor");
         if(empty($title)){
             $ret['errno'] = 400;
             $ret['errmsg'] = '主题不能为空';
             $this->ajaxReturn($ret);exit;
         }
-        if(count($tags) == 0){
-            $ret['errno'] = 400;
-            $ret['errmsg'] = '标签不能为空';
-            $this->ajaxReturn($ret);exit;
-        }
-        $tag = implode(',',$tags);
+//        if(count($tags) == 0){
+//            $ret['errno'] = 400;
+//            $ret['errmsg'] = '标签不能为空';
+//            $this->ajaxReturn($ret);exit;
+//        }
+//        $tag = implode(',',$tags);
 //        if(count($fileList) == 0){
 //            $ret['errno'] = 400;
 //            $ret['errmsg'] = '封面不能为空';
 //            $this->ajaxReturn($ret);exit;
 //        }
-        if($editor == ''){
-            $ret['errno'] = 400;
-            $ret['errmsg'] = '正文不能为空';
-            $this->ajaxReturn($ret);exit;
-        }
-        $article = new MArticle();
-        $mtag = new MTag();
+//        if($editor == ''){
+//            $ret['errno'] = 400;
+//            $ret['errmsg'] = '正文不能为空';
+//            $this->ajaxReturn($ret);exit;
+//        }
+//        $article = new MArticle();
+//        $mtag = new MTag();
 //        $article_id =$article->data([
 //            "title"=>$title,
 //            "editor"=>$editor,
