@@ -94,7 +94,7 @@ class Home extends Base
             $this->ajaxReturn($ret);exit;
         }
         $article = new MArticle();
-        $mtag = new MTag();
+        $matag = new MATag();
         $article->data([
             "title"=>$title,
             "editor"=>$editor,
@@ -104,11 +104,11 @@ class Home extends Base
         $article->save();
         $article_id = $article->article_id;
         foreach ($tags as $t) {
-           $mtag->data([
+           $matag->data([
                 "tag_id" =>$t['tag_id'],
                 "article_id"=>$article_id
             ]);
-            $result = $mtag->save();
+            $result = $matag->save();
         }
         if(!empty($result)){
             $ret['errno'] = 400;
