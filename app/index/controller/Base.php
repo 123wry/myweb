@@ -18,6 +18,7 @@ class Base extends Controller
     public  $redis;
     public $flag = 0;
     public $role_id = 0;
+    public $user = 0;
     public function _initialize()
     {
         $this->redis = new Redis();
@@ -25,11 +26,12 @@ class Base extends Controller
         $redisKey = md5($Authorization);
         //24分钟没用使用此接口则返回重新登录提示
         $key = $this->redis->get("Authorization:".$redisKey);
+        $this->user = $key;
         $this->role_id = $this->redis->get("Authorization:role:".$redisKey);
         if(!empty($key)) {
             $this->flag = 0;
-            $this->redis->set("Authorization:" . $redisKey, 1, 1440);
-            $this->redis->set("Authorization:role:" . $redisKey, 1, 1540);
+            $this->redis->set("Authorization:" . $redisKey, $key, 1440);
+            $this->redis->set("Authorization:role:" . $redisKey, $key, 1540);
         } else {
             $this->flag = 1;
         }

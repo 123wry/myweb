@@ -3,6 +3,7 @@ namespace app\index\controller;
 
 use app\index\model\MArticle;
 use app\index\model\MAtag;
+use app\index\model\MFiles;
 use app\index\model\MMenu;
 use app\index\model\MTag;
 
@@ -96,11 +97,13 @@ class Home extends Base
         }
         $article = new MArticle();
         $matag = new MAtag();
+
         $article->data([
             "title"=>$title,
             "editor"=>$editor,
             "tags"=>$tag,
-            "fileList"=>$files
+            "fileList"=>$files,
+            "user_id"=>$this->user
         ]);
         $article->save();
         $article_id = $article->article_id;
@@ -111,6 +114,28 @@ class Home extends Base
            );
         }
         $result = $matag->saveAll($tagList);
+        if(empty($result)){
+            $ret['errno'] = 400;
+            $ret['errmsg'] = '提交失败';
+        } else {
+            $ret['errno'] = 200;
+            $ret['errmsg'] = '提交成功';
+        }
+        return $this->ajaxReturn($ret);
+    }
+    public function uploadFile()
+    {
+        $filelist = input("fileList/a");
+        $filelisturl = $filelist[0]['url'];
+        $file = input("files/a");
+        $fileurl = $file[0]['url'];
+        $files = new MFiles();
+        $files->data([
+            "filelisturl"=>$filelisturl,
+            "fileurl"=>$fileurl,
+            "user_id"=>$this->user
+        ]);
+        $result = $files->save();
         if(empty($result)){
             $ret['errno'] = 400;
             $ret['errmsg'] = '提交失败';

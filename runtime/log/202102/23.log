@@ -1,0 +1,327 @@
+---------------------------------------------------------------
+[ 2021-02-23T01:44:27+08:00 ] 127.0.0.1 POST adsp.xunlei.com/api/adp/get
+[运行时间：1.189512s] [吞吐率：0.84req/s] [内存消耗：897.80kb] [文件加载：29]
+[ info ] [ LANG ] D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'adp',
+    2 => 'get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'adsp.xunlei.com',
+  'content-length' => '146',
+  'user-agent' => 'axios/0.18.0',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'application/json, text/plain, */*',
+)
+[ info ] [ PARAM ] array (
+  'appId' => '14',
+  'callId' => '1614015862918',
+  'devicId' => '04922602584DYBKQ',
+  'identity' => '1',
+  'isAll' => '1',
+  'positionId' => '1304',
+  'shownOrderId' => '',
+  'v' => '1.0',
+  'sig' => 'baa8b69f89bf2b03121026897d6943c3',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-02-23T01:44:27+08:00 ] 127.0.0.1 GET adsp.xunlei.com/api/adp/get?positionId=1560&jsCall=ssp_callback_36599458&appId=101&callId=1614015864638&v=1.0&sig=b3b4f24e8ee3675c6e7607a09b0da2f0
+[运行时间：1.225761s] [吞吐率：0.82req/s] [内存消耗：1,004.14kb] [文件加载：32]
+[ info ] [ LANG ] D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'adp',
+    2 => 'get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) thunderx/10.1.38.890 Chrome/59.0.3071.115 Electron/1.8.6 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'adsp.xunlei.com',
+)
+[ info ] [ PARAM ] array (
+  'positionId' => '1560',
+  'jsCall' => 'ssp_callback_36599458',
+  'appId' => '101',
+  'callId' => '1614015864638',
+  'v' => '1.0',
+  'sig' => 'b3b4f24e8ee3675c6e7607a09b0da2f0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-02-23T01:45:18+08:00 ] 127.0.0.1 POST adsp.xunlei.com/api/adp/get
+[运行时间：0.016025s] [吞吐率：62.40req/s] [内存消耗：897.20kb] [文件加载：29]
+[ info ] [ LANG ] D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'adp',
+    2 => 'get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'adsp.xunlei.com',
+  'content-length' => '146',
+  'user-agent' => 'axios/0.18.0',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'application/json, text/plain, */*',
+)
+[ info ] [ PARAM ] array (
+  'appId' => '14',
+  'callId' => '1614015918178',
+  'devicId' => '04922602584DYBKQ',
+  'identity' => '1',
+  'isAll' => '1',
+  'positionId' => '1749',
+  'shownOrderId' => '',
+  'v' => '1.0',
+  'sig' => 'c1325f6ec18f94300f4d908cba0ec036',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-02-23T01:46:18+08:00 ] 127.0.0.1 POST adsp.xunlei.com/api/adp/get
+[运行时间：0.019708s] [吞吐率：50.74req/s] [内存消耗：897.20kb] [文件加载：29]
+[ info ] [ LANG ] D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'adp',
+    2 => 'get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'adsp.xunlei.com',
+  'content-length' => '146',
+  'user-agent' => 'axios/0.18.0',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'application/json, text/plain, */*',
+)
+[ info ] [ PARAM ] array (
+  'appId' => '14',
+  'callId' => '1614015978654',
+  'devicId' => '04922602584DYBKQ',
+  'identity' => '1',
+  'isAll' => '1',
+  'positionId' => '1352',
+  'shownOrderId' => '',
+  'v' => '1.0',
+  'sig' => '707120cfbc20e5f5ddffd52308a1896d',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-02-23T01:46:34+08:00 ] 127.0.0.1 POST adsp.xunlei.com/api/adp/get
+[运行时间：0.015821s] [吞吐率：63.21req/s] [内存消耗：897.20kb] [文件加载：29]
+[ info ] [ LANG ] D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'adp',
+    2 => 'get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'adsp.xunlei.com',
+  'content-length' => '146',
+  'user-agent' => 'axios/0.18.0',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'application/json, text/plain, */*',
+)
+[ info ] [ PARAM ] array (
+  'appId' => '14',
+  'callId' => '1614015994172',
+  'devicId' => '04922602584DYBKQ',
+  'identity' => '1',
+  'isAll' => '1',
+  'positionId' => '1305',
+  'shownOrderId' => '',
+  'v' => '1.0',
+  'sig' => 'deb042ae0210b47debc593917ef8ac15',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-02-23T01:46:49+08:00 ] 127.0.0.1 POST adsp.xunlei.com/api/adp/get
+[运行时间：0.019566s] [吞吐率：51.11req/s] [内存消耗：897.20kb] [文件加载：29]
+[ info ] [ LANG ] D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'adp',
+    2 => 'get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'adsp.xunlei.com',
+  'content-length' => '146',
+  'user-agent' => 'axios/0.18.0',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'application/json, text/plain, */*',
+)
+[ info ] [ PARAM ] array (
+  'appId' => '14',
+  'callId' => '1614016009217',
+  'devicId' => '04922602584DYBKQ',
+  'identity' => '1',
+  'isAll' => '1',
+  'positionId' => '1306',
+  'shownOrderId' => '',
+  'v' => '1.0',
+  'sig' => 'de08772edbd21df3479401cdfc74b32d',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-02-23T04:46:20+08:00 ] 127.0.0.1 POST adsp.xunlei.com/api/adp/get
+[运行时间：0.858349s] [吞吐率：1.17req/s] [内存消耗：897.20kb] [文件加载：29]
+[ info ] [ LANG ] D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'adp',
+    2 => 'get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'adsp.xunlei.com',
+  'content-length' => '146',
+  'user-agent' => 'axios/0.18.0',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'application/json, text/plain, */*',
+)
+[ info ] [ PARAM ] array (
+  'appId' => '14',
+  'callId' => '1614026779177',
+  'devicId' => '04922602584DYBKQ',
+  'identity' => '1',
+  'isAll' => '1',
+  'positionId' => '1352',
+  'shownOrderId' => '',
+  'v' => '1.0',
+  'sig' => '79ae6dc63c8e68178d37708d14af66a3',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-02-23T04:46:35+08:00 ] 127.0.0.1 POST adsp.xunlei.com/api/adp/get
+[运行时间：0.028340s] [吞吐率：35.29req/s] [内存消耗：897.20kb] [文件加载：29]
+[ info ] [ LANG ] D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'adp',
+    2 => 'get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'adsp.xunlei.com',
+  'content-length' => '146',
+  'user-agent' => 'axios/0.18.0',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'application/json, text/plain, */*',
+)
+[ info ] [ PARAM ] array (
+  'appId' => '14',
+  'callId' => '1614026795167',
+  'devicId' => '04922602584DYBKQ',
+  'identity' => '1',
+  'isAll' => '1',
+  'positionId' => '1305',
+  'shownOrderId' => '',
+  'v' => '1.0',
+  'sig' => '7dd28a7792b39e2b7e8351d283fa3c67',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-02-23T04:46:50+08:00 ] 127.0.0.1 POST adsp.xunlei.com/api/adp/get
+[运行时间：0.019576s] [吞吐率：51.08req/s] [内存消耗：897.20kb] [文件加载：29]
+[ info ] [ LANG ] D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'adp',
+    2 => 'get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'adsp.xunlei.com',
+  'content-length' => '146',
+  'user-agent' => 'axios/0.18.0',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'application/json, text/plain, */*',
+)
+[ info ] [ PARAM ] array (
+  'appId' => '14',
+  'callId' => '1614026810169',
+  'devicId' => '04922602584DYBKQ',
+  'identity' => '1',
+  'isAll' => '1',
+  'positionId' => '1306',
+  'shownOrderId' => '',
+  'v' => '1.0',
+  'sig' => '1c3702fe198e60632d3077079970959e',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-02-23T22:00:49+08:00 ] 127.0.0.1 POST adsp.xunlei.com/api/adp/get
+[运行时间：1.613311s] [吞吐率：0.62req/s] [内存消耗：897.80kb] [文件加载：29]
+[ info ] [ LANG ] D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'adp',
+    2 => 'get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'adsp.xunlei.com',
+  'content-length' => '146',
+  'user-agent' => 'axios/0.18.0',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'application/json, text/plain, */*',
+)
+[ info ] [ PARAM ] array (
+  'appId' => '14',
+  'callId' => '1614088843438',
+  'devicId' => '04922602584DYBKQ',
+  'identity' => '1',
+  'isAll' => '1',
+  'positionId' => '1304',
+  'shownOrderId' => '',
+  'v' => '1.0',
+  'sig' => '2b86295bb91eee64851b97801115e1d1',
+)
+[ info ] [ LOG ] INIT File
