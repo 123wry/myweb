@@ -31,7 +31,7 @@ class Base extends Controller
         if(!empty($key)) {
             $this->flag = 0;
             $this->redis->set("Authorization:" . $redisKey, $key, 1440);
-            $this->redis->set("Authorization:role:" . $redisKey, $key, 1540);
+            $this->redis->set("Authorization:role:" . $redisKey, $this->role_id, 1440);
         } else {
             $this->flag = 1;
         }

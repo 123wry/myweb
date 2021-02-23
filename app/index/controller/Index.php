@@ -21,7 +21,7 @@ class Index extends Controller
         $user = new MUser();
         $ru = new MRu();
         $account = $user->where( "password",$password)->field("user_id")->find();
-//        $role_id = $ru->where("user_id",$account['user_id'])->field("role_id")->find();
+        $role_id = $ru->where("user_id",$account['user_id'])->field("role_id")->find();
         if(!empty($account)){
 
             //token生成
@@ -50,7 +50,7 @@ class Index extends Controller
                 $ret['token'] = $jwt;
             }
             $this->redis->set("Authorization:".md5($jwt),$account['user_id'],1440);
-            $this->redis->set("Authorization:role:".md5($jwt),$account['user_id'],1440);
+            $this->redis->set("Authorization:role:".md5($jwt),$role_id['role_id'],1440);
         } else {
             $ret['errno'] = 400;
             $ret['errmsg'] = '登录失败';
