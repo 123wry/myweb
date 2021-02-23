@@ -134,7 +134,7 @@ class Home extends Base
         $filelisturl = '/static/tmpfile/'.$filelist[0]['name'];
         $file = input("files/a");
         $fileurl = $file[0]['url'];
-        move_uploaded_file($fileurl,'/static/tmpfile/'.$fileurl[0]['name']);
+        move_uploaded_file($fileurl,'/static/tmpfile/'.$file[0]['name']);
         $fileurl = '/static/tmpfile/'.$file[0]['name'];
 
         $files = new MFiles();
