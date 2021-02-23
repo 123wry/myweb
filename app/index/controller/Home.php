@@ -127,14 +127,16 @@ class Home extends Base
     {
         $filelist = input("fileList/a");
         $filelisturl = $filelist[0]['url'];
-//        $fillisttmp = file_get_contents($filelisturl);
-//        file_put_contents('/public/static/tmpfile/'.$filelist[0]['name'],$fillisttmp);
+        $fillisttmp = file_get_contents($filelisturl);
+        file_put_contents('/public/static/tmpfile/'.$filelist[0]['name'],$fillisttmp);
 
-        move_uploaded_file($filelisturl,'/static/tmpfile/'.$filelist[0]['name']);
+//        move_uploaded_file($filelisturl,'/static/tmpfile/'.$filelist[0]['name']);
         $filelisturl = '/static/tmpfile/'.$filelist[0]['name'];
         $file = input("files/a");
         $fileurl = $file[0]['url'];
-        move_uploaded_file($fileurl,'/static/tmpfile/'.$file[0]['name']);
+//        move_uploaded_file($fileurl,'/static/tmpfile/'.$file[0]['name']);
+        $filetmp = file_get_contents($fileurl);
+        file_put_contents('/public/static/tmpfile/'.$filelist[0]['name'],$filetmp);
         $fileurl = '/static/tmpfile/'.$file[0]['name'];
 
         $files = new MFiles();
