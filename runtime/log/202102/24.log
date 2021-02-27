@@ -1776,3 +1776,36 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.085970s ] mysql:host=39.108.231.59;dbname=ours;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `t_m_menu` [ RunTime:0.055972s ]
 [ sql ] [ SQL ] SELECT `m`.`menu_name`,`m`.`parent_menu_id`,`m`.`menu_link`,`m`.`menu_icon`,`m`.`menu_level`,`m`.`menu_id` FROM `t_m_menu` `m` RIGHT JOIN `t_m_rm` `rm` ON `m`.`menu_id`=`rm`.`menu_id` WHERE  `m`.`state` = 0  AND `rm`.`role_id` = 0 [ RunTime:0.051475s ]
+---------------------------------------------------------------
+[ 2021-02-24T23:00:53+08:00 ] 127.0.0.1 POST adsp.xunlei.com/api/adp/get
+[运行时间：2.573589s] [吞吐率：0.39req/s] [内存消耗：897.80kb] [文件加载：29]
+[ info ] [ LANG ] D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'adp',
+    2 => 'get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'adsp.xunlei.com',
+  'content-length' => '146',
+  'user-agent' => 'axios/0.18.0',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'application/json, text/plain, */*',
+)
+[ info ] [ PARAM ] array (
+  'appId' => '14',
+  'callId' => '1614178842995',
+  'devicId' => '04922602584DYBKQ',
+  'identity' => '1',
+  'isAll' => '1',
+  'positionId' => '1304',
+  'shownOrderId' => '',
+  'v' => '1.0',
+  'sig' => '04a79efe17990b48766b8063bd50e291',
+)
+[ info ] [ LOG ] INIT File
