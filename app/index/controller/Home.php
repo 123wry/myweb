@@ -128,6 +128,7 @@ class Home extends Base
     {
         $file_ = '/public/static/tmpfile/';
 
+        $title = input("title");
         $filelist = input("fileList");
         $filelistbase = base64_decode($filelist);
         $start = strpos($filelist,'/');
@@ -148,6 +149,7 @@ class Home extends Base
 
         $files = new MFiles();
         $files->data([
+            "file_title"=>$title,
             "filelisturl"=>$filelist_url,
             "fileurl"=>$file_url,
             "user_id"=>$this->user
