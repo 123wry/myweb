@@ -135,7 +135,7 @@ class Home extends Base
         $start = strpos($filelist,'/');
         $end = strpos($filelist,';');
         $tmp = substr($filelistbase,$start,$end);
-        $filelist_name = rand(0,999999).'_'.time().$tmp;
+        $filelist_name = rand(0,999999).'_'.time().$tmp;dump($filelistbase);
         $filelist_url = $file_.$filelist_name;
         file_put_contents($filelist_url,$filelistbase);
 
