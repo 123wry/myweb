@@ -130,7 +130,8 @@ class Home extends Base
 
         $title = input("title");
         $filelist = input("fileList");
-        $filelistbase = base64_decode($filelist);
+        $base_filelist = explode(',', $filelist);
+        $filelistbase = base64_decode($base_filelist['1']);
         $start = strpos($filelist,'/');
         $end = strpos($filelist,';');
         $tmp = substr($filelistbase,$start,$end);
@@ -139,7 +140,8 @@ class Home extends Base
         file_put_contents($filelist_url,$filelistbase);
 
         $file = input("files");
-        $filebase = base64_decode($file);
+        $base_file = explode(',', $filelist);
+        $filebase = base64_decode($base_file['1']);
         $start = strpos($file,'/');
         $end = strpos($file,';');
         $tmp = substr($filebase,$start,$end);
