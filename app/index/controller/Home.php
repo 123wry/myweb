@@ -129,17 +129,17 @@ class Home extends Base
         $file_ = '/public/static/tmpfile/';
 
         $title = input("title");
-        $filelist = input("fileList");
+        $filelist = input("fileList/s");
         $base_filelist = explode(',', $filelist);
         $filelistbase = base64_decode($base_filelist['1']);
         $start = strpos($filelist,'/');
         $end = strpos($filelist,';');
         $tmp = substr($filelistbase,$start,$end);
-        $filelist_name = rand(0,999999).'_'.time().$tmp;dump($filelistbase);
+        $filelist_name = rand(0,999999).'_'.time().$tmp;
         $filelist_url = $file_.$filelist_name;
         file_put_contents($filelist_url,$filelistbase);
 
-        $file = input("files");
+        $file = input("files/s");
         $base_file = explode(',', $filelist);
         $filebase = base64_decode($base_file['1']);
         $start = strpos($file,'/');
