@@ -1,0 +1,60 @@
+---------------------------------------------------------------
+[ 2021-02-28T14:57:56+08:00 ] 127.0.0.1 GET adsp.xunlei.com/api/adp/hotword?appId=14&callId=1614495463511&count=1&sig=2d4e18290626007e8936d2b3c2ae4dd2
+[运行时间：4.388528s] [吞吐率：0.23req/s] [内存消耗：897.30kb] [文件加载：29]
+[ info ] [ LANG ] D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'adp',
+    2 => 'hotword',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'adsp.xunlei.com',
+  'user-agent' => 'axios/0.18.0',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'application/json, text/plain, */*',
+)
+[ info ] [ PARAM ] array (
+  'appId' => '14',
+  'callId' => '1614495463511',
+  'count' => '1',
+  'sig' => '2d4e18290626007e8936d2b3c2ae4dd2',
+)
+[ info ] [ LOG ] INIT File
+> 'da33e40a30e8fbf9e0e4f099f6e81469',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-02-28T14:57:56+08:00 ] 127.0.0.1 GET adsp.xunlei.com/api/adp/get?positionId=1560&jsCall=ssp_callback_44785203&appId=101&callId=1614495473661&v=1.0&sig=c91206bb2541a2346fac684c81a73f16
+[运行时间：1.410880s] [吞吐率：0.71req/s] [内存消耗：1,004.14kb] [文件加载：32]
+[ info ] [ LANG ] D:\xp.cn\www\wwwroot\admin\localhost_80\wwwroot\myweb\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'adp',
+    2 => 'get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) thunderx/10.1.38.890 Chrome/59.0.3071.115 Electron/1.8.6 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'adsp.xunlei.com',
+)
+[ info ] [ PARAM ] array (
+  'positionId' => '1560',
+  'jsCall' => 'ssp_callback_44785203',
+  'appId' => '101',
+  'callId' => '1614495473661',
+  'v' => '1.0',
+  'sig' => 'c91206bb2541a2346fac684c81a73f16',
+)
+[ info ] [ LOG ] INIT File

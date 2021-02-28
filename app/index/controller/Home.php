@@ -126,25 +126,30 @@ class Home extends Base
     }
     public function uploadFile()
     {
-        $filelist = input("fileList/a");
-        $filelisturl = $filelist[0]['url'];
-//        $fillisttmp = file_get_contents($filelisturl);
+        $file_ = '/public/static/tmpfile/';
 
-//        file_put_contents('/public/static/tmpfile/'.$filelist[0]['name'],$fillisttmp);
+        $filelist = input("fileList");
+        $filelistbase = base64_decode($filelist);
+        $start = strpos($filelist,'/');
+        $end = strpos($filelist,';');
+        $tmp = substr($filelistbase,$start,$end);
+        $filelist_name = rand(0,999999).'_'.time().$tmp;
+        $filelist_url = $file_.$filelist_name;
+        file_put_contents($filelist_url,$filelistbase);
 
-        move_uploaded_file($filelisturl,'/static/tmpfile/'.$filelist[0]['name']);
-        $filelisturl = '/static/tmpfile/'.$filelist[0]['name'];
-        $file = input("files/a");
-        $fileurl = $file[0]['url'];
-        move_uploaded_file($fileurl,'/static/tmpfile/'.$file[0]['name']);
-//        $filetmp = file_get_contents($fileurl);
-//        file_put_contents('/public/static/tmpfile/'.$filelist[0]['name'],$filetmp);
-        $fileurl = '/static/tmpfile/'.$file[0]['name'];
+        $file = input("files");
+        $filebase = base64_decode($file);
+        $start = strpos($file,'/');
+        $end = strpos($file,';');
+        $tmp = substr($filebase,$start,$end);
+        $file_name = rand(0,999999).'_'.time().$tmp;
+        $file_url = $file_.$file_name;
+        file_put_contents($file_url,$filebase);
 
         $files = new MFiles();
         $files->data([
-            "filelisturl"=>$filelisturl,
-            "fileurl"=>$fileurl,
+            "filelisturl"=>$filelist_url,
+            "fileurl"=>$file_url,
             "user_id"=>$this->user
         ]);
         $result = $files->save();
