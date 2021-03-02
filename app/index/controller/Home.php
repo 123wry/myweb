@@ -128,7 +128,8 @@ class Home extends Base
     {
         $file_ = '/public/static/tmpfile/';
 
-        $title = input("title");
+        $gitinput = input("gitinput");
+        $input = input("input");
         $filelist = input("fileList/s");
         $base_filelist = explode(',', $filelist);
         $filelistbase = base64_decode($base_filelist['1']);
@@ -139,21 +140,11 @@ class Home extends Base
         $filelist_url = $file_.$filelist_name;
         file_put_contents($filelist_url,$filelistbase);
 
-        $file = input("files/s");
-        $base_file = explode(',', $filelist);
-        $filebase = base64_decode($base_file['1']);
-        $start = strpos($file,'/');
-        $end = strpos($file,';');
-        $tmp = substr($filebase,$start,$end);
-        $file_name = rand(0,999999).'_'.time().$tmp;
-        $file_url = $file_.$file_name;
-        file_put_contents($file_url,$filebase);
-
         $files = new MFiles();
         $files->data([
-            "file_title"=>$title,
+            "file_title"=>$input,
             "filelisturl"=>$filelist_url,
-            "fileurl"=>$file_url,
+            "gitfile"=>$gitinput,
             "user_id"=>$this->user
         ]);
         $result = $files->save();
