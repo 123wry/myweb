@@ -131,8 +131,7 @@ class Home extends Base
         $gitinput = input("gitinput");
         $input = input("input");
         $filelist = input("fileList/s");
-        $base_filelist = explode(',', $filelist);
-        $filelistbase = base64_decode($base_filelist['1']);
+        $filelistbase = base64_decode($filelist);
         $start = strpos($filelist,'/');
         $end = strpos($filelist,';');
         $tmp = substr($filelistbase,$start,$end);
