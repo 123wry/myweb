@@ -131,18 +131,11 @@ class Home extends Base
         $gitinput = input("gitinput");
         $input = input("input");
         $filelist = input("fileList/s");
-        $filelistbase = base64_decode($filelist);dump($filelistbase);
-        $start = strpos($filelist,'/');
-        $end = strpos($filelist,';');
-        $tmp = substr($filelistbase,$start,$end);
-        $filelist_name = rand(0,999999).'_'.time().$tmp;
-        $filelist_url = $file_.$filelist_name;
-        file_put_contents($filelist_url,$filelistbase);
 
         $files = new MFiles();
         $files->data([
             "file_title"=>$input,
-            "filelisturl"=>$filelist_url,
+            "filelisturl"=>$filelist,
             "gitfile"=>$gitinput,
             "user_id"=>$this->user
         ]);
