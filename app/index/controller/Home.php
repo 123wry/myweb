@@ -150,4 +150,29 @@ class Home extends Base
         return $this->ajaxReturn($ret);
     }
 
+    public function addTag()
+    {
+        $tags = input("tags/a");
+        $mtag = new MTag();
+        $tagArr = array();
+        $tagTemp = array();
+        foreach ($tags as $t){
+            if($t['tag_id'] == 0){
+                $tagTemp['name'] = $t['name'];
+                $tagTemp['type'] = $t['type'];
+                $tagTemp['tag_type'] = $t['tag_type'];
+                $tagArr[] = $tagTemp;
+            }
+        }
+        $result = $mtag->saveAll($tagArr);
+        if(empty($result)){
+            $ret['errno'] = 400;
+            $ret['errmsg'] = '新增标签失败';
+        } else {
+            $ret['errno'] = 200;
+            $ret['errmsg'] = '新增标签成功';
+        }
+        return $this->ajaxReturn($ret);
+    }
+
 }
