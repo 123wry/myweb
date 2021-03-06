@@ -104,7 +104,8 @@ class Home extends Base
             "editor"=>$editor,
             "tags"=>$tag,
             "fileList"=>$files,
-            "user_id"=>$this->user
+            "user_id"=>$this->user,
+            "c_time"=>time()
         ]);
         $article->save();
         $article_id = $article->article_id;
