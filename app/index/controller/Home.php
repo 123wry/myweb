@@ -178,7 +178,15 @@ class Home extends Base
     public function getArticle()
     {
         $article = new MArticle();
-        $ret = $article->where("status",0)->select();
+        $user_id = $this->user;
+        $ret = $article
+            ->field("title,fileList,c_time")
+            ->where("status",0)
+            ->where("user_id",$user_id)
+            ->select();
+        foreach ($ret as $key=>$item){
+            $ret[$key]['c_time'] = date("Y-m-d H:i:s",$item['c_time']);
+        }
         return $this->ajaxReturn($ret);
     }
 }
