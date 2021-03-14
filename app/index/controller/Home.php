@@ -195,7 +195,7 @@ class Home extends Base
             $tags = explode(',',$item['tags']);
             foreach ($tags as $t){
                 unset($ret[$key]['tag_id']);
-                $ret[$key]['tag_id'][] = $tagArr[$t];
+                $ret[$key]['tags'][] = $tagArr[$t];
             }
         }
         return $this->ajaxReturn($ret);
