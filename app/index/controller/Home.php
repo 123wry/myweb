@@ -138,7 +138,8 @@ class Home extends Base
             "file_title"=>$input,
             "filelisturl"=>$filelist,
             "gitfile"=>$gitinput,
-            "user_id"=>$this->user
+            "user_id"=>$this->user,
+            "c_time"=>time()
         ]);
         $result = $files->save();
         if(empty($result)){
@@ -181,6 +182,20 @@ class Home extends Base
         $user_id = $this->user;
         $ret = $article
             ->field("title,fileList,c_time")
+            ->where("status",0)
+            ->where("user_id",$user_id)
+            ->select();
+        foreach ($ret as $key=>$item){
+            $ret[$key]['c_time'] = date("Y-m-d H:i:s",$item['c_time']);
+        }
+        return $this->ajaxReturn($ret);
+    }
+    public function getFiles()
+    {
+        $files = new MFiles();
+        $user_id = $this->user;
+        $ret = $files
+            ->field("filelisturl,gitfile,file_title,c_time")
             ->where("status",0)
             ->where("user_id",$user_id)
             ->select();
