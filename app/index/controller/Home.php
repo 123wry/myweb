@@ -216,4 +216,33 @@ class Home extends Base
         }
         return $this->ajaxReturn($ret);
     }
+    public function getEssayDetail()
+    {
+        $id =trim(I("id"));
+        $article = new MArticle();
+        $user_id = $this->user;
+        $ret = $article
+            ->field("title,c_time,tags,editor")
+            ->where("article",$id)
+            ->where("status",0)
+            ->where("user_id",$user_id)
+            ->select();
+        $res = $ret->toArray();
+        $tag = new MTag();
+        $tagsel = $tag->field("name,type,tag_id")->select();
+        $tagArr = array();
+        foreach ($tagsel as $tagitem){
+            $tagArr[$tagitem['tag_id']] = $tagitem;
+        }
+        foreach ($res as $key=>$item){
+            $res[$key]['c_time'] = date("Y-m-d H:i:s",$item['c_time']);
+            $tags = explode(',',$item['tags']);
+            $res[$key]['tags'] = array();
+            foreach ($tags as $t){
+                unset($res[$key]['tag_id']);
+                $res[$key]['tags'][] = $tagArr[$t];
+            }
+        }
+        return $this->ajaxReturn($res);
+    }
 }
