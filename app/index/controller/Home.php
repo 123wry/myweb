@@ -184,21 +184,22 @@ class Home extends Base
             ->where("status",0)
             ->where("user_id",$user_id)
             ->select();
+        $res = $ret;
         $tag = new MTag();
         $tagsel = $tag->field("name,type,tag_id")->select();
         $tagArr = array();
         foreach ($tagsel as $tagitem){
             $tagArr[$tagitem['tag_id']] = $tagitem;
         }
-        foreach ($ret as $key=>$item){
-            $ret[$key]['c_time'] = date("Y-m-d H:i:s",$item['c_time']);
+        foreach ($res as $key=>$item){
+            $res[$key]['c_time'] = date("Y-m-d H:i:s",$item['c_time']);
             $tags = explode(',',$item['tags']);
             foreach ($tags as $t){
-                unset($ret[$key]['tag_id']);
-                $ret[$key]['tags'][] = $tagArr[$t];
+                unset($res[$key]['tag_id']);
+                $res[$key]['tags'][] = $tagArr[$t];
             }
         }
-        return $this->ajaxReturn($ret);
+        return $this->ajaxReturn($res);
     }
     public function getFiles()
     {
