@@ -6,7 +6,6 @@ use app\index\model\MAtag;
 use app\index\model\MFiles;
 use app\index\model\MMenu;
 use app\index\model\MTag;
-use think\File;
 
 class Home extends Base
 {

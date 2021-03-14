@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fe06ca6-cb99-4c17-834a-1ff6aa55fe6a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index/controller/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/index/controller/Home.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +20,8 @@
       <file leaf-file-name="Home.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/index/controller/Home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="192" column="28" selection-start-line="192" selection-start-column="20" selection-end-line="192" selection-end-column="28" />
+            <state relative-caret-position="483">
+              <caret line="202" column="9" lean-forward="true" selection-start-line="202" selection-start-column="9" selection-end-line="202" selection-end-column="9" />
               <folding>
                 <element signature="e#39#68#0#PHP" expanded="true" />
               </folding>
@@ -33,6 +34,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>field(</find>
+      <find>File</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -108,6 +110,13 @@
               <item name="index" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="myweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myweb" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -158,12 +167,12 @@
       <workItem from="1614695663435" duration="6977000" />
       <workItem from="1614875057045" duration="1435000" />
       <workItem from="1615688093436" duration="760000" />
-      <workItem from="1615702713833" duration="2457000" />
+      <workItem from="1615702713833" duration="2758000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80753000" />
+    <option name="totallyTimeSpent" value="81054000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -540,8 +549,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index/controller/Home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="192" column="28" selection-start-line="192" selection-start-column="20" selection-end-line="192" selection-end-column="28" />
+        <state relative-caret-position="483">
+          <caret line="202" column="9" lean-forward="true" selection-start-line="202" selection-start-column="9" selection-end-line="202" selection-end-column="9" />
           <folding>
             <element signature="e#39#68#0#PHP" expanded="true" />
           </folding>
