@@ -180,7 +180,7 @@ class Home extends Base
         $article = new MArticle();
         $user_id = $this->user;
         $ret = $article
-            ->field("title,fileList,c_time,tags")
+            ->field("title,fileList,c_time,tags,article_id")
             ->where("status",0)
             ->where("user_id",$user_id)
             ->select();
