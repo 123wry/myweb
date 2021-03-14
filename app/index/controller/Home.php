@@ -180,7 +180,7 @@ class Home extends Base
         $article = new MArticle();
         $user_id = $this->user;
         $ret = $article
-            ->field("title,fileList,c_time")
+            ->field("title,fileList,c_time,tags")
             ->where("status",0)
             ->where("user_id",$user_id)
             ->select();
@@ -204,7 +204,7 @@ class Home extends Base
         $files = new MFiles();
         $user_id = $this->user;
         $ret = $files
-            ->field("filelisturl,gitfile,file_title,c_time,tags")
+            ->field("filelisturl,gitfile,file_title,c_time")
             ->where("status",0)
             ->where("user_id",$user_id)
             ->select();
