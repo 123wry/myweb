@@ -175,5 +175,10 @@ class Home extends Base
         }
         return $this->ajaxReturn($ret);
     }
-
+    public function getArticle()
+    {
+        $article = new MArticle();
+        $ret = $article->where("status",0)->select();
+        return $this->ajaxReturn($ret);
+    }
 }
