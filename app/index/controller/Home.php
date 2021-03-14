@@ -184,10 +184,7 @@ class Home extends Base
             ->where("status",0)
             ->where("user_id",$user_id)
             ->select();
-        $res = array();
-        foreach ($ret as $r){
-            $res[] = $r;
-        }
+        $res = $ret->toArray();
         $tag = new MTag();
         $tagsel = $tag->field("name,type,tag_id")->select();
         $tagArr = array();
