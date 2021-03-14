@@ -194,6 +194,7 @@ class Home extends Base
         foreach ($res as $key=>$item){
             $res[$key]['c_time'] = date("Y-m-d H:i:s",$item['c_time']);
             $tags = explode(',',$item['tags']);
+            $res[$key]['tags'] = array();
             foreach ($tags as $t){
                 unset($res[$key]['tag_id']);
                 $res[$key]['tags'][] = $tagArr[$t];
