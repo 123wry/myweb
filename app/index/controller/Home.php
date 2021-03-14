@@ -218,7 +218,7 @@ class Home extends Base
     }
     public function getEssayDetail()
     {
-        $id =trim(I("id"));
+        $id =trim(input("id"));
         $article = new MArticle();
         $user_id = $this->user;
         $ret = $article
