@@ -194,7 +194,8 @@ class Home extends Base
             $ret[$key]['c_time'] = date("Y-m-d H:i:s",$item['c_time']);
             $tags = explode(',',$item['tags']);
             foreach ($tags as $t){
-                $ret[$key]['tagsel'][] = $tagArr[$t];
+                unset($ret[$key]['tag_id']);
+                $ret[$key]['tag_id'][] = $tagArr[$t];
             }
         }
         return $this->ajaxReturn($ret);
