@@ -10,5 +10,5 @@ use \think\Model;
 
 class MArticle extends Model
 {
-
+    protected $resultSetType = 'collection';
 }

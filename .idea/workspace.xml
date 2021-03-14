@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fe06ca6-cb99-4c17-834a-1ff6aa55fe6a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/index/controller/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/index/controller/Home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index/model/MArticle.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/index/model/MArticle.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,14 +16,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Home.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index/controller/Home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="186" column="12" selection-start-line="186" selection-start-column="8" selection-end-line="186" selection-end-column="12" />
+            <state relative-caret-position="122">
+              <caret line="178" column="5" lean-forward="true" selection-start-line="178" selection-start-column="5" selection-end-line="178" selection-end-column="5" />
               <folding>
                 <element signature="e#39#68#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MArticle.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/index/model/MArticle.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -52,11 +61,11 @@
         <option value="$PROJECT_DIR$/app/index/model/MTag.php" />
         <option value="$PROJECT_DIR$/app/index/model/MMd5.php" />
         <option value="$PROJECT_DIR$/app/index/model/MAtag.php" />
-        <option value="$PROJECT_DIR$/app/index/model/MArticle.php" />
         <option value="$PROJECT_DIR$/app/index/model/MFiles.php" />
         <option value="$PROJECT_DIR$/app/index/controller/Index.php" />
         <option value="$PROJECT_DIR$/app/index/controller/Base.php" />
         <option value="$PROJECT_DIR$/app/index/controller/Home.php" />
+        <option value="$PROJECT_DIR$/app/index/model/MArticle.php" />
       </list>
     </option>
   </component>
@@ -166,12 +175,12 @@
       <workItem from="1614695663435" duration="6977000" />
       <workItem from="1614875057045" duration="1435000" />
       <workItem from="1615688093436" duration="760000" />
-      <workItem from="1615702713833" duration="8807000" />
+      <workItem from="1615702713833" duration="9278000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87103000" />
+    <option name="totallyTimeSpent" value="87574000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -508,13 +517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index/model/MArticle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thinkphp/library/think/File.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -548,11 +550,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index/controller/Home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="186" column="12" selection-start-line="186" selection-start-column="8" selection-end-line="186" selection-end-column="12" />
+        <state relative-caret-position="122">
+          <caret line="178" column="5" lean-forward="true" selection-start-line="178" selection-start-column="5" selection-end-line="178" selection-end-column="5" />
           <folding>
             <element signature="e#39#68#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index/model/MArticle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
         </state>
       </provider>
     </entry>
