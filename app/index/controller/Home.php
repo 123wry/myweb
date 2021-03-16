@@ -223,7 +223,7 @@ class Home extends Base
         $user_id = $this->user;
         $ret = $article
             ->field("title,c_time,tags,editor")
-            ->where("article",$id)
+            ->where("article_id",$id)
             ->where("status",0)
             ->where("user_id",$user_id)
             ->select();
